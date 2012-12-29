@@ -1,0 +1,604 @@
+/************************************************************************
+*  Patch pour mettre certaines instances du jeu en français     	*
+*									*
+*			Désigné pour HEAVEN WORLD,			*
+*		  serveur privé World of Warcraft 3.3.5a		*
+*									*
+*		    Écrit par un Elfe, pour des Elfes.			*
+*									*
+*************************************************************************/
+
+
+/* Types d'instances concernées :
+- Forge des Âmes
+- Fosse de Saron
+- Salles des Reflets
+- Citadelle de la Couronne de glace
+- Le Sanctum Rubis 
+- Ulduar */
+
+
+
+
+/******************************************
+Forge des âmes
+*******************************************/ 
+
+/* Introduction.
+PNJ :
+Dame Jaina Portvaillant. */
+REPLACE INTO `script_texts` VALUES (-1632040, 'Louée soit la Lumière de vous avoir menés à moi sains et saufs ! Nous avons tant à faire si nous voulons vaincre le roi-liche et mettre fin au Fléau.', null, null, null, null, null, null, null, null, '16617', '0', '0', '0', 'Jaina SAY_INTRO_1');
+REPLACE INTO `script_texts` VALUES (-1632041,'Nos alliés de la Croisade d’argent et les chevaliers de la Lame d’ébène ont franchi la grande porte de la Couronne de glace, et tentent d’établir une tête de pont dans la citadelle.', null, null, null, null, null, null, null, null, '16618', '0', '0', '0', 'Jaina SAY_INTRO_2');
+REPLACE INTO `script_texts` VALUES (-1632042, 'Leur succès dépend de ce que nous découvrirons dans ces maudits couloirs. Notre mission est périlleuse, mais il faut tenir bon !', null, null, null, null, null, null, null, null, '16619', '0', '0', '0', 'Jaina SAY_INTRO_3');
+REPLACE INTO `script_texts` VALUES (-1632043, 'L’attention du Roi-Liche est portée vers la grande porte, nous allons pouvoir nous infiltrer par le côté pour découvrir les informations qui nous permettront de vaincre le Fléau une bonne fois pour toutes.', null, null, null, null, null, null, null, null, '16620', '0', '0', '0', 'Jaina SAY_INTRO_4');
+REPLACE INTO `script_texts` VALUES (-1632044, 'Les agents du SI:7 du roi Varian ont appris que le sanctuaire personnel du roi-liche se trouve au fin fond d’un endroit appelé la Salle des Reflets.', null, null, null, null, null, null, null, null, '16621', '0', '0', '0', 'Jaina SAY_INTRO_5');
+REPLACE INTO `script_texts` VALUES (-1632045, 'Nous allons nous frayer un chemin dans cet horrible dédale, et trouver un moyen de pénétrer dans la salle des Reflets. Je sens qu’elle abrite une puissante magie. Une magie qui pourrait être la clé de la destruction du Fléau !', null, null, null, null, null, null, null, null, '16622', '0', '0', '0','Jaina SAY_INTRO_6');
+REPLACE INTO `script_texts` VALUES (-1632046, 'Votre première mission est de détruire les machines de mort qui se trouvent dans cette maléfique matrice d\'âmes, et de dégager un chemin pour nos soldats.', null, null, null, null, null, null, null, null, '16623', '0', '0', '0','Jaina SAY_INTRO_7');
+REPLACE INTO `script_texts` VALUES (-1632047, 'Hâtez-vous, champions ! Je vais ordonner aux troupes de vous suivre.', null, null, null, null, null, null, null, null, '16624', '0', '0', '0', 'Jaina SAY_INTRO_8');
+
+/* PNJ :
+Dame Sylvanas Coursevent. */
+REPLACE INTO `script_texts` VALUES (-1632050, 'La Croisade d’argent et les chevaliers de la Lame d’ébène ont assailli les portes de la citadelle de la Couronne de glace. Ils préparent une grande offensive contre le Fléau. Notre mission est un peu plus subtile, mais tout aussi importante.', null, null, null, null, null, null, null, null, '17038', '0', '0', '0','Sylvanas SAY_INTRO_1');
+REPLACE INTO `script_texts` VALUES (-1632051, 'L’attention du Roi-Liche est tournée vers la grande porte. Nous allons en profiter pour nous infiltrer par le côté et trouver des informations qui nous permettrons de le vaincre une bonne fois pour toutes.', null, null, null, null, null, null, null, null,  '17039', '0', '0', '0', 'Sylvanas SAY_INTRO_2');
+REPLACE INTO `script_texts` VALUES (-1632052, 'Nos éclaireurs ont découvert qu’en plus de la salle du Trône de glace, le Roi-Liche possède un sanctuaire privé au fin fond d’un endroit appelé les Salles des Reflets. Voilà la cible, champions.', null, null, null, null, null, null, null, null, '17040', '0', '0', '0', 'Sylvanas SAY_INTRO_3');
+REPLACE INTO `script_texts` VALUES (-1632053, 'Nous allons semer la destruction dans ces couloirs maudits jusqu\'à pénétrer dans les Salles des Reflets. Si la citadelle abrite quoi que ce soit de précieux, ce sera dans ces salles.', null, null, null, null, null, null, null, null, '17041', '0', '0', '0', 'Sylvanas SAY_INTRO_4');
+REPLACE INTO `script_texts` VALUES (-1632054, 'Votre première mission est de détruire les machines de mort installées dans cette horrible matrice d\'âmes, et d\'ouvrir un chemin pour nos soldats.', null, null, null, null, null, null, null, null, '17042', '0', '0', '0', 'Sylvanas SAY_INTRO_5');
+REPLACE INTO `script_texts` VALUES (-1632055, 'La Dame sombre veille sur vous. Hâtez-vous !', null, null, null, null, null, null, null, null,  '17043', '0', '0', '0', 'Sylvanas SAY_INTRO_6');
+
+/* Boss :
+Bronjahm. */
+REPLACE INTO `script_texts` VALUES ('-1632001', 'Enfin, un public captivé !', null, null, null, null, null, null, null, null, '16595', '1', '0', '0', 'boss_bronjahm SAY_AGGRO_2');
+REPLACE INTO `script_texts` VALUES ('-1632002', 'Du combustible pour la machine !', null, null, null, null, null, null, null, null, '16596', '1', '0', '0', 'boss_bronjahm SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1632003', 'Une nouvelle âme vient renforcer nos rangs !', null, null, null, null, null, null, null, null, '16597', '1', '0', '0', 'boss_bronjahm SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1632004', 'Ah ! Boudoooooouh...', null, null, null, null, null, null, null, null, '16598', '1', '0', '0', 'boss_bronjahm SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1632005', 'Le vortex des moissonnés vous appelle !', null, null, null, null, null, null, null, null, '16599', '1', '0', '0', 'boss_bronjahm SAY_SOULSTORM');
+REPLACE INTO `script_texts` VALUES ('-1632006', 'Je vais arracher votre âme de votre corps !', null, null, null, null, null, null, null, null, '16600', '1', '0', '0', 'boss_bronjahm SAY_CORRUPT_SOUL');
+
+/* Boss :
+Dévoreur d'âmes. */
+REPLACE INTO `script_texts` VALUES ('-1632007', 'Vous osez poser le regard sur l\'armée des âmes ? JE VAIS VOUS DÉVORER VIVANTS !', null, null, null, null, null, null, null, null, '16884', '1', '0', '0', 'boss_devourer SAY_MALE_1_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1632008', 'Vous osez poser le regard sur l\'armée des âmes ? JE VAIS VOUS DÉVORER VIVANTS !', null, null, null, null, null, null, null, null, '16890', '1', '0', '0', 'boss_devourer SAY_FEMALE_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1632009', 'Damnation !', null, null, null, null, null, null, null, null, '16885', '1', '0', '0', 'boss_devourer SAY_MALE_1_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1632010', 'Damnation !', null, null, null, null, null, null, null, null, '16891', '1', '0', '0', 'boss_devourer SAY_FEMALE_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1632011', 'Damnation !', null, null, null, null, null, null, null, null, '16896', '1', '0', '0', 'boss_devourer SAY_MALE_2_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1632012', 'Damné pour l\'éternité !', null, null, null, null, null, null, null, null, '16886', '1', '0', '0', 'boss_devourer SAY_MALE_1_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1632013', 'Damnée pour l\'éternité !', null, null, null, null, null, null, null, null, '16892', '1', '0', '0', 'boss_devourer SAY_FEMALE_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1632014', 'Damné pour l\'éternité !', null, null, null, null, null, null, null, null, '16897', '1', '0', '0', 'boss_devourer SAY_MALE_2_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1632015', 'L\'afflux des âmes ne sera jamais endigué ! Vous ne faites que retarder l\'inévitable.', null, null, null, null, null, null, null, null, '16887', '1', '0', '0', 'boss_devourer SAY_MALE_1_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1632016', 'L\'afflux des âmes ne sera jamais endigué ! Vous ne faites que retarder l\'inévitable.', null, null, null, null, null, null, null, null, '16893', '1', '0', '0', 'boss_devourer SAY_FEMALE_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1632017', 'L\'afflux des âmes ne sera jamais endigué ! Vous ne faites que retarder l\'inévitable.', null, null, null, null, null, null, null, null, '16898', '1', '0', '0', 'boss_devourer SAY_MALE_2_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1632018', 'SOUFFRANCE ! ANGOISSE ! CHAOS ! VENEZ VOUS REPAÎTRE !', null, null, null, null, null, null, null, null, '16888', '1', '0', '0', 'boss_devourer SAY_MALE_1_SOUL_ATTACK');
+REPLACE INTO `script_texts` VALUES ('-1632019', 'SOUFFRANCE ! ANGOISSE ! CHAOS ! VENEZ VOUS REPAÎTRE !', null, null, null, null, null, null, null, null, '16894', '1', '0', '0', 'boss_devourer SAY_FEMALE_SOUL_ATTACK');
+REPLACE INTO `script_texts` VALUES ('-1632020', 'SOUFFRANCE ! ANGOISSE ! CHAOS ! VENEZ VOUS REPAÎTRE !', null, null, null, null, null, null, null, null, '16899', '1', '0', '0', 'boss_devourer SAY_MALE_2_SOUL_ATTACK');
+REPLACE INTO `script_texts` VALUES ('-1632021', 'Contemplez l\'abysse, et voyez votre fin !', null, null, null, null, null, null, null, null, '16889', '1', '0', '0', 'boss_devourer SAY_MALE_1_DARK_GLARE');
+REPLACE INTO `script_texts` VALUES ('-1632022', 'Contemplez l\'abysse, et voyez votre fin !', null, null, null, null, null, null, null, null, '16895', '1', '0', '0', 'boss_devourer SAY_FEMALE_DARK_GLARE');
+REPLACE INTO `script_texts` VALUES ('-1632023', '%s commence à lancer Âme réfléchie !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'boss_devourer EMOTE_MIRRORED_SOUL');
+REPLACE INTO `script_texts` VALUES ('-1632024', '%s commence à lancer Âmes déchaînées !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'boss_devourer EMOTE_UNLEASH_SOULS');
+REPLACE INTO `script_texts` VALUES ('-1632025', '%s commence à lancer Âmes gémissantes !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'boss_devourer EMOTE_WAILING_SOULS');
+
+/* Fin.
+PNJ :
+Dame Sylvanas Coursevent. */
+REPLACE INTO `script_texts` VALUES (-1632030, 'Excellent travail, champions ! Nous allons installer notre camp de base dans ce hall. Mes mages vont bientôt réactiver le système de transfert du Fléau. Empruntez-le quand vous serez prêts pour la prochaine mission. Je vous retrouverai de l’autre côté.', null, null, null, null, null, null, null, null, '17044', '1', '0', '0', 'Sylvanas SAY_SYLVANAS_OUTRO');
+/* PNJ :
+Dame Jaina Portvaillant. */
+REPLACE INTO `script_texts` VALUES (-1632029, 'Excellent travail, champions ! Nous allons installer notre camp de base dans ce hall. Mes mages vont bientôt réactiver le système de transfert du Fléau. Empruntez-le quand vous serez prêts pour la prochaine mission, je vous retrouverai de l’autre côté.', null, null, null, null, null, null, null, null, '16625', '1', '0', '0', 'Jaina SAY_JAINA_OUTRO');
+
+
+
+
+/******************************************
+Fosse de Saron
+*******************************************/
+
+/* Introduction.
+PNJs :
+Seigneur du Fléau Tyrannus, Dame Jaina Portvaillant, Dame Sylvanas Coursevent. */
+REPLACE INTO `script_texts` VALUES ('-1658001', 'Des intrus ont pénétré dans le domaine du maître. Faites donner l’alarme !', null, null, null, null, null, null, null, null, '16747', '1', '0', '0', 'tyrannus SAY_TYRANNUS_INTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658002', 'Héros de l’Alliance, à l’attaque !', null, null, null, null, null, null, null, null, '16626', '1', '0', '0', 'jaina SAY_JAINA_INTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658003', 'Soldats de la Horde, à l’attaque !', null, null, null, null, null, null, null, null, '17045', '1', '0', '0', 'sylvanas SAY_SYLVANAS_INTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658004', 'Pfff, de la chair à canon. Même pas bonne pour la main-d’œuvre dans les carrières. Profitez bien de vos derniers instants, vous ne serez bientôt plus que des morts-vivants décérébrés.', null, null, null, null, null, null, null, null, '16748', '1', '0', '0', 'tyrannus SAY_TYRANNUS_INTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658005', 'Votre dernier souvenir sera celui d’une douloureuse agonie.', null, null, null, null, null, null, null, null, '16749', '1', '0', '0', 'tyrannus SAY_TYRANNUS_INTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1658006', 'NON ! MONSTRE !', null, null, null, null, null, null, null, null, '16627', '1', '0', '0', 'jaina SAY_JAINA_INTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658007', 'Pitoyables avortons.', null, null, null, null, null, null, null, null, '17046', '1', '0', '0', 'sylvanas SAY_SYLVANAS_INTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658008', 'Serviteurs, anéantissez les intrus !', null, null, null, null, null, null, null, null, '16751', '1', '0', '0', 'tyrannus SAY_TYRANNUS_INTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1658009', 'Je n’ai pas le choix. Pardonnez-moi, nobles soldats...', null, null, null, null, null, null, null, null, '16628', '1', '0', '0', 'jaina SAY_JAINA_INTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1658010', 'Vous devrez vous frayer un chemin à travers la carrière par vous-mêmes.', null, null, null, null, null, null, null, null, '16629', '0', '0', '0', 'jaina SAY_JAINA_INTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1658011', 'Vous allez devoir vous frayer un chemin à travers ce cloaque par vous-mêmes.', null, null, null, null, null, null, null, null, '17047', '0', '0', '0', 'sylvanas SAY_SYLVANAS_INTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1658012', 'Libérez tous les alliés en esclavage que vous rencontrerez. Leur assistance nous sera sans doute précieuse pour affronter Tyrannus. Je vais assembler des renforts et vous retrouver de l’autre côté de la carrière.', null, null, null, null, null, null, null, null, '16630', '0', '0', '0', 'jaina SAY_JAINA_INTRO_5');
+REPLACE INTO `script_texts` VALUES ('-1658013', 'Libérez tous les soldats de la Horde que vous rencontrerez. Leur aide nous sera sans doute précieuse pour affronter Tyrannus. Je vais rassembler des renforts et vous retrouver de l’autre côté de la carrière.', null, null, null, null, null, null, null, null, '17048', '0', '0', '0', 'sylvanas SAY_SYLVANAS_INTRO_4');
+
+/* Boss :
+Krick et Ick. */
+REPLACE INTO `script_texts` VALUES ('-1658024', 'Le travail ne doit pas être interrompu ! Ick ! Charge-toi d\'eux !', null, null, null, null, null, null, null, null, '16926', '1', '0', '0', 'krick SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1658025', 'Ooh... Ces membres pourraient nous être utile !', null, null, null, null, null, null, null, null, '16927', '1', '0', '0', 'krick SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1658026', 'On manquait de brelles jambes... Merci pour cette aimable contribution !', null, null, null, null, null, null, null, null, '16928', '1', '0', '0', 'krick SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1658027', 'Il suffit de courir partout ! Arrête de bouger le temps que je les explose tous !', null, null, null, null, null, null, null, null, '16929', '1', '0', '0', 'krick SAY_ORDER_STOP');
+REPLACE INTO `script_texts` VALUES ('-1658028', 'Vite ! Empoisonne-les tous avant qu\'ils ne s\'éloignent !', null, null, null, null, null, null, null, null, '16930', '1', '0', '0', 'krick SAY_ORDER_BLOW');
+REPLACE INTO `script_texts` VALUES ('-1658029', 'Non ! L\'autre là ! C\'est celui-la qu\'il me faut ! Là !', null, null, null, null, null, null, null, null, '16931', '1', '0', '0', 'krick SAY_TARGET_1');
+REPLACE INTO `script_texts` VALUES ('-1658030', 'J\'ai changé d\'avis... Plutôt l\'autre, là, là-bas !', null, null, null, null, null, null, null, null, '16932', '1', '0', '0', 'krick SAY_TARGET_2');
+REPLACE INTO `script_texts` VALUES ('-1658031', 'Mais pourquoi tu attaques celui-là ? Celui qui est dangereux il est là-bas, imbécile !', null, null, null, null, null, null, null, null, '16933', '1', '0', '0', 'krick SAY_TARGET_3');
+REPLACE INTO `script_texts` VALUES ('-1658032', '%s commence à invoquer des mines explosives !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'krick EMOTE_KRICK_MINES');
+REPLACE INTO `script_texts` VALUES ('-1658033', '%s commence à libérer un nuage de poison toxique !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'ick EMOTE_ICK_POISON');
+REPLACE INTO `script_texts` VALUES ('-1658034', '%s vous chasse !', null, null, null, null, null, null, null, null, '0', '5', '0', '0', 'ick EMOTE_ICK_CHASING');
+REPLACE INTO `script_texts` VALUES ('-1658035', 'Attendez ! Non ! Pitié ne me tuez pas ! Je vous tout vous dire !', null, null, null, null, null, null, null, null, '16934', '1', '0', '0', 'krick SAY_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658036', 'Je ne suis pas assez naïve pour croire à ces supplications, mais j\'écouterai ce que tu as à dire.', null, null, null, null, null, null, null, null, '16611', '1', '0', '0', 'jaina SAY_JAINA_KRICK_1');
+REPLACE INTO `script_texts` VALUES ('-1658037', 'Et pourquoi la Reine Banshee épargnerait-elle ta misérable vie ?', null, null, null, null, null, null, null, null, '17033', '1', '0', '0', 'sylvanas SAY_SYLVANAS_KRICK_1');
+REPLACE INTO `script_texts` VALUES ('-1658038', 'Ce que vous cherchez est dans l\'entre du maître, mais il faut tuer Tyrannus pour y pénétrer. Dans les Salles des Reflets, vous y trouverez Deuillegivre. Elle... Elle détient la vérité.', null, null, null, null, null, null, null, null, '16935', '1', '0', '0', 'krick SAY_OUTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658039', ' Deuillegivre, laissée sans surveillance ? Impossible !', null, null, null, null, null, null, null, null, '16612', '1', '0', '0', 'jaina SAY_JAINA_KRICK_2');
+REPLACE INTO `script_texts` VALUES ('-1658040', 'Deuillegivre ? Le Roi-Liche ne se sépare jamais de son épée. Si tu me mens...', null, null, null, null, null, null, null, null, '17034', '1', '0', '0', 'sylvanas SAY_SYLVANAS_KRICK_2');
+REPLACE INTO `script_texts` VALUES ('-1658041', 'Je vous jure ! Je vous jure que c\'est vrai ! S\'il vous plait, épargnez-moi !!', null, null, null, null, null, null, null, null, '16936', '1', '0', '0', 'krick SAY_OUTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1658042', 'Minable insecte ! La mort est tout ce que tu auras !', null, null, null, null, null, null, null, null, '16753', '1', '0', '0', 'tyrannus SAY_TYRANNUS_KRICK_1');
+REPLACE INTO `script_texts` VALUES ('-1658043', 'Ourgh... NON !!!', null, null, null, null, null, null, null, null, '16937', '1', '0', '0', 'krick SAY_OUTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1658044', 'Ne pensez pas que je vais vous laisser pénétrer dans le sanctuaire de mon maître si facilement. Poursuivez-moi si vous l\'osé.', null, null, null, null, null, null, null, null, '16754', '1', '0', '0', 'tyrannus SAY_TYRANNUS_KRICK_2');
+REPLACE INTO `script_texts` VALUES ('-1658045', 'Quelle fin cruelle. Venez, héros. Il faut vérifier si ce que disait ce gnome est vrai. Si nous pouvons séparer Arthas de Deuillegivre, nous aurons peut-être une chance de l\'arrêter.', null, null, null, null, null, null, null, null, '16613', '1', '0', '0', 'jaina SAY_JAINA_KRICK_3');
+REPLACE INTO `script_texts` VALUES ('-1658046', 'Une fin parfaite pour un traître. Venez, nous devons libérer les esclaves et voir par nous-mêmes ce que renferme le sanctuaire du Roi-Liche.', null, null, null, null, null, null, null, null, '17035', '1', '0', '0', 'sylvanas SAY_SYLVANAS_KRICK_3');
+
+/* Boss : 
+Gargivre. */
+REPLACE INTO `script_texts` VALUES ('-1658014', 'Des petites créatures qui courent par terre, vous apportez du bon manger à Gargivre !', null, null, null, null, null, null, null, null, '16912', '1', '0', '0', 'garfrost SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1658015', '\'Vais garder pour casse-croûte. Pour plus tard.', null, null, null, null, null, null, null, null, '16913', '1', '0', '0', 'garfrost SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1658016', 'Celui-la peut-être plus très bon pour manger. Gargivre idiot ! PAS BIEN ! PAS BIEN !', null, null, null, null, null, null, null, null, '16914', '1', '0', '0', 'garfrost SAY_BOULDER_HIT');
+REPLACE INTO `script_texts` VALUES ('-1658017', 'Gargivre espère que slip géant est resté propre. Pour que le chef a pas honte. Pour plus tard.', null, null, null, null, null, null, null, null, '16915', '1', '0', '0', 'garfrost SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1658018', 'Hache est pas assez bien. Gargivre va faire une meilleure et ensuite MASSACRER.', null, null, null, null, null, null, null, null, '16916', '1', '0', '0', 'garfrost SAY_FORGE_1');
+REPLACE INTO `script_texts` VALUES ('-1658071', 'Gargivre fatigué par petits mortels. Maintenant, les os gèlent !', null, null, null, null, null, null, null, null, '16917', '1', '0', '0', 'garfrost SAY_FORGE_2');
+REPLACE INTO `script_texts` VALUES ('-1658021', 'Héros ! Nous allons retenir les morts-vivants aussi longtemps que possible, jusqu\'à notre dernier souffle ! Chargez-vous du Seigneur du Fléau !', null, null, null, null, null, null, null, null, '17148', '1', '0', '0', 'victus_or_ironskull SAY_GENERAL_GARFROST');
+REPLACE INTO `script_texts` VALUES ('-1658022', '%s lance un rocher de Saronite massif sur vous !', null, null, null, null, null, null, null, null, '0', '5', '0', '0', 'garfrost EMOTE_THROW_SARONITE');
+REPLACE INTO `script_texts` VALUES ('-1658023', '%s lance Congélation sur %t.', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'garfrost EMOTE_DEEP_FREEZE');
+REPLACE INTO `script_texts` VALUES ('-1658020', 'Un autre prendra sa place. Vous perdez votre temps.', null, null, null, null, null, null, null, null, '16752', '1', '0', '0', 'tyrannus SAY_TYRANNUS_GARFROST');
+
+/* Event :
+Tunnel avec Seigneur du Fléau Tyrannus. */
+REPLACE INTO `script_texts` VALUES ('-1658047', 'Vous me poursuivez en vain, intrus, car le Roi-Liche a placé une armée de morts-vivants sous mes ordres ! Voyez !', null, null, null, null, null, null, null, null, '16755', '1', '0', '0', 'tyrannus SAY_TYRANNUS_AMBUSH_1');
+REPLACE INTO `script_texts` VALUES ('-1658048', 'Moustiques obstinés ! Vous n\'atteindrez pas l\'entrée du sanctuaire du maître ! Soldats, détruisez-les !', null, null, null, null, null, null, null, null, '16756', '1', '0', '0', 'tyrannus SAY_TYRANNUS_AMBUSH_2');
+REPLACE INTO `script_texts` VALUES ('-1658049', 'Frigecroc, emprisonne-les dans le tunnel ! ENTERRE-LES VIVANTS !', null, null, null, null, null, null, null, null, '16757', '1', '0', '0', 'tyrannus SAY_GAUNTLET');
+REPLACE INTO `script_texts` VALUES ('-1658050', 'Hélas, mes très, très braves aventuriers, votre intrusion touche à sa fin. Entendez-vous le claquement de l\'acier sur les os qui monte du tunnel, derrière vous ? C\'est le son de votre mort imminente.', null, null, null, null, null, null, null, null, '16758', '1', '0', '0', 'tyrannus SAY_PREFIGHT_1');
+REPLACE INTO `script_texts` VALUES ('-1658051', 'Héros ! Nous allons retenir les morts-vivants aussi longtemps que possible, jusqu\'à nos derniers souffles. Chargez-vous du Seigneur du Fléau !', null, null, null, null, null, null, null, null, '17150', '1', '0', '0', 'victus_or_ironskull SAY_GENERAL_TRASH');
+REPLACE INTO `script_texts` VALUES ('-1658052', 'Ha, ha ! La vermine s\'agite, comme c\'est amusant. Quand j\'en aurai fini avec vous, l\'épée de mon maître dévorera vos âmes. Mourez !', null, null, null, null, null, null, null, null, '16759', '1', '0', '0', 'tyrannus SAY_PREFIGHT_2');
+REPLACE INTO `script_texts` VALUES ('-1658053', 'Je ne decevrai pas le Roi-Liche ! Venez trouver votre fin !', null, null, null, null, null, null, null, null, '16760', '1', '0', '0', 'tyrannus SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1658054', 'Quelle prestation embarassante... La mort vous va bien mieux !', null, null, null, null, null, null, null, null, '16761', '1', '0', '0', 'tyrannus SAY_SLAY_1');
+
+/* Boss : 
+Seigneur du Fléau Tyrannus. */
+REPLACE INTO `script_texts` VALUES ('-1658055', 'Vous auriez peut-être dû rester dans les montagnes !', null, null, null, null, null, null, null, null, '16762', '1', '0', '0', 'tyrannus SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1658056', 'Impossible... Frigecroc... Avertis...', null, null, null, null, null, null, null, null, '16763', '1', '0', '0', 'tyrannus SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1658057', 'Frigecroc, anéantis cet imbécile !', null, null, null, null, null, null, null, null, '16764', '1', '0', '0', 'tyrannus SAY_MARK');
+REPLACE INTO `script_texts` VALUES ('-1658058', 'Trop de puissance...', null, null, null, null, null, null, null, null, '16765', '1', '0', '0', 'tyrannus SAY_SMASH');
+REPLACE INTO `script_texts` VALUES ('-1658059', 'La wyrm du givre %s contemple %t et prépare une attaque glaciale !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'rimefang EMOTE_RIMEFANG_ICEBOLT');
+REPLACE INTO `script_texts` VALUES ('-1658060', '%s rugit et se gonfle de Puissance impie.', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'tyrannus EMOTE_SMASH');
+
+/* Event de sortie.
+PNJs :
+Dame Jaina Portvaillant, Dame Sylvanas Coursevent. */
+REPLACE INTO `script_texts` VALUES ('-1658061', 'Braves champions, nous vous devons nos vies, notre liberté... Le geste est dérisoire en regard de cette énorme dette, mais je vous fais le serment qu\'à compter de ce jour, tous aurons vent de vos exploits et du rayon de lumière que vous avez fait briller dans les ténèbres de cette sombre citadelle. Ce jour restera non seulement comme témoignage de votre vaillance, mais aussi du fait que nul ennemi, et pas même le Roi-Liche, ne peut résister quand l\'Alliance et la Horde oublient leurs différends pour -', null, null, null, null, null, null, null, null, '17149', '1', '0', '0', 'victus_or_ironskull SAY_GENERAL_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658062', 'Braves champions, nous vous devons nos vies, notre liberté... Le geste est dérisoire en regard de cette énorme dette, mais je vous fais le serment qu\'à compter de ce jour, tous aurons vent de vos exploits et du rayon de lumière que vous avez fait briller dans les ténèbres de cette sombre citadelle. Ce jour restera non seulement comme témoignage de votre vaillance, mais aussi du fait que nul ennemi, et pas même le Roi-Liche, ne peut résister quand l\'Alliance et la Horde oublient leurs différends -', null, null, null, null, null, null, null, null, '17151', '1', '0', '0', 'victus_or_ironskull SAY_GENERAL_OUTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658063', 'Héros, venez à moi !', null, null, null, null, null, null, null, null, '16614', '0', '0', '0', 'jaina SAY_JAINA_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658064', 'À couvert derrière moi ! Vite !', null, null, null, null, null, null, null, null, '17037', '0', '0', '0', 'sylvanas SAY_SYLVANAS_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1658065', 'La Reine du Givre n\'est plus là. Il faut continuer, l\'objectif n\'est plus très loin.', null, null, null, null, null, null, null, null, '16615', '0', '0', '0', 'jaina SAY_JAINA_OUTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1658066', 'Je... Je n\'ai pas pu les sauver... Sois maudit, Arthas ! SOIS MAUDIT !', null, null, null, null, null, null, null, null, '16616', '0', '0', '0', 'jaina SAY_JAINA_OUTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1658067', 'J\'ai bien cru qu\'il ne la fermerait jamais, quel moulin à paroles. Sindragosa l\'a enfin réduit au silence. Champions, aux Salles des Reflets ! L\'objectif est proche... Je le sens.', null, null, null, null, null, null, null, null, '17036', '0', '0', '0', 'sylvanas SAY_SYLVANAS_OUTRO_2');
+
+
+
+
+/******************************************
+Salles des Reflets
+*******************************************/
+
+/* Introduction
+PNJ :
+Dame Sylvanas Coursevent & Uther. */
+REPLACE INTO `gossip_texts` VALUES (-3594538,'Dame Sylvanas, nous sommes prêts pour la mission suivante !', null, null, null, null, null, null, null, null,'SYLVANAS_START_EVENT01');
+REPLACE INTO `gossip_texts` VALUES (-3594539,'Dame Sylvanas, c\'est parti !', null, null, null, null, null, null, null, null,'SYLVANAS_START_EVENT02');
+REPLACE INTO `script_texts` VALUES (-1668434, 'Je... Je ne peux y croire ! Deuillegivre là devant nous, sans survaillance ! Comme l\'avait annoncé le gnome. Venez, héros !', null, null, null, null, null, null, null, null, '17049', '0', '0', '1', 'SYLVANAS_TO_PLAYER01');
+REPLACE INTO `script_texts` VALUES (-1668437, 'Contempler d’aussi près la lame qui m’a dérobé la vie... La douleur en est... Ravivée.', null, null, null, null, null, null, null, null, '17050', '0', '0', '1', 'SYLVANAS_TO_PLAYER02');
+REPLACE INTO `script_texts` VALUES (-1668439, 'Je n’ose pas la toucher. Reculez ! Reculez, je vais essayer d’entrer en harmonie avec la lame ! Elle pourrait renfermer la clé de notre salut...', null, null, null, null, null, null, null, null, '17051', '1', '0', '1','SYLVANAS_TO_PLAYER03');
+REPLACE INTO `script_texts` VALUES (-1668441,'Attention, mon enfant. Ce n\'est pas la première fois que j\'entends quelqu\'un dire que cette maudite lame va nous sauver. Regardez bien autour de vous, voyez ce qu\'elle a engendré.', null, null, null, null, null, null, null, null, '16659', '0', '0', '1', 'UTHER_TO_SYLVANAS01');
+REPLACE INTO `script_texts` VALUES (-1668443,'Uther... Uther le Porte-Lumière. Comment...', null, null, null, null, null, null, null, null, 17052,0,0,1,'SYLVANAS_TO_UTHER01');
+REPLACE INTO `script_texts` VALUES (-1668445,'Vous n\'avez pas beaucoup de temps. Le Roi-Liche voit ce que voit l\'épée. Il ne va pas tarder.', null, null, null, null, null, null, null, null, 16660,0,0,1,'UTHER_TO_SYLVANAS02');
+REPLACE INTO `script_texts` VALUES (-1668447,'Le Roi-Liche est ici ? Alors c’est aujourd’hui que s’accomplit ma destinée !', null, null, null, null, null, null, null, null, 17053,1,0,1,'SYLVANAS_TO_UTHER02');
+REPLACE INTO `script_texts` VALUES (-1668449,'Vous ne pouvez pas vaincre le Roi-Liche. Pas ici. Essayer serait une folie. Il tuera ceux qui vous suivent, et les relèvera comme puissant soldats du Fléau. Mais pour vous, Sylvanas, sa récompense serait encore pire que la dernière fois.', null, null, null, null, null, null, null, null, 16661,0,0,1,'UTHER_TO_SYLVANAS03');
+REPLACE INTO `script_texts` VALUES (-1668451,'Il doit bien y avoir un moyen !', null, null, null, null, null, null, null, null, 17054,0,0,1,'SYLVANAS_TO_UTHER03');
+REPLACE INTO `script_texts` VALUES (-1668453,'Peut-être. Mais sachez-le bien : il doit toujours y avoir un Roi-Liche. Même si vous parvenez à abattre Arthas, il faudrait qu’un autre prenne sa place, car, privé du contrôle de son roi, le Fléau déferlerait sur ce monde comme une nuée de sauterelles et anéantirait tout sur son passage.', null, null, null, null, null, null, null, null, 16662,0,0,1,'UTHER_TO_SYLVANAS04');
+REPLACE INTO `script_texts` VALUES (-1668455,'Qui pourrait porter un tel fardeau ?', null, null, null, null, null, null, null, null, 17055,0,0,1,'SYLVANAS_TO_UTHER04');
+REPLACE INTO `script_texts` VALUES (-1668457,'Je ne sais pas, Reine Banshee. Je suspecte le fragment d’Arthas qui reste peut-être enfoui dans l’esprit du Roi-Liche d’être tout ce qui retient le Fléau d’annihiler Azeroth.', null, null, null, null, null, null, null, null, 16663,0,0,1,'UTHER_TO_SYLVANAS05');
+REPLACE INTO `script_texts` VALUES (-1668462,'Le Trône de glace...', null, null, null, null, null, null, null, null, 17056,0,0,1,'SYLVANAS_TO_UTHER05');
+REPLACE INTO `script_texts` VALUES (-1668467,'Oui. AAARGHHHH ! Il... Il arrive... Il faut...', null, null, null, null, null, null, null, null, 16665,1,0,1,'UTHER_TO_SYLVANAS06');
+REPLACE INTO `script_texts` VALUES (-1668472,'Tu ne m’échapperas pas aussi facilement, Arthas ! J’aurai ma vengeance !', null, null, null, null, null, null, null, null, 17057,1,0,1,'SYLVANAS_TO_LICHKING01');
+
+/* PNJ :
+Dame Jaina Portvaillant & Uther. */
+REPLACE INTO `gossip_texts` VALUES (-3594536,'Dame Jaina, nous sommes prêts pour la prochaine mission !', null, null, null, null, null, null, null, null, 'JAINA_START_EVENT01');
+REPLACE INTO `gossip_texts` VALUES (-3594537,'Dame Jaina, c\'est parti !', null, null, null, null, null, null, null, null, 'JAINA_START_EVENT02');
+REPLACE INTO `script_texts` VALUES (-1668433, 'Qu\'est-ce qu\'il fait froid ici... Je sens mon sang se glacer !', null, null, null, null, null, null, null, null, '16631', '0', '0', '1', 'JAINA_TO_PLAYER01');
+REPLACE INTO `script_texts` VALUES (-1668435, 'Qu\'est-ce que c\'est ? Là-bas ! Est-ce possible ? Héros, venez à moi !', null, null, null, null, null, null, null, null, '16632', '1', '0', '1', 'JAINA_TO_PLAYER02');
+REPLACE INTO `script_texts` VALUES (-1668436, 'Deuillegivre... La lame qui a détruit notre Royaume...', null, null, null, null, null, null, null, null, '16633', '1', '0', '1', 'JAINA_TO_PLAYER03');
+REPLACE INTO `script_texts` VALUES (-1668438, 'Reculez ! Touchez seulement cette lame et votre âme en sera meutrie pour l\'éternité ! Il faut que j\'essaye d\'entrer en contact avec les esprits enfermés dans Deuillegivre. Faites-moi de la place, reculez s\'il vous plait !', null, null, null, null, null, null, null, null, '16634', '1', '0', '1', 'JAINA_TO_PLAYER04');
+REPLACE INTO `script_texts` VALUES (-1668440, 'Jaina ! Est-ce vraiment toi ?', null, null, null, null, null, null, null, null, '16666', '0', '0', '1', 'UTHER_TO_JAINA01');
+REPLACE INTO `script_texts` VALUES (-1668442,'Uther ! Mon cher Uther ! Oh... Je suis si désolée.', null, null, null, null, null, null, null, null, 16635,0,0,1,'JAINA_TO_UTHER01');
+REPLACE INTO `script_texts` VALUES (-1668444,'Jaina, tu n\'as pas beaucoup de temps. Le Roi-Liche voit ce que voit l\'épée. Il ne va pas tarder.', null, null, null, null, null, null, null, null, 16667,0,0,1,'UTHER_TO_JAINA02');
+REPLACE INTO `script_texts` VALUES (-1668446,'Arthas est ici ? Peut-être que...', null, null, null, null, null, null, null, null, 16636,0,0,1,'JAINA_TO_UTHER02');
+REPLACE INTO `script_texts` VALUES (-1668448,'Non, ma fille. Arthas n\'est pas là. Arthas n\'est qu\'une présence dans l\'esprit du Roi-Liche. Une présence qui s\'estompe...', null, null, null, null, null, null, null, null, 16668,0,0,1,'UTHER_TO_JAINA03');
+REPLACE INTO `script_texts` VALUES (-1668450,'Mais Uther, s’il y a le moindre espoir d’atteindre Arthas, je... Je dois essayer.', null, null, null, null, null, null, null, null, 16637,0,0,1,'JAINA_TO_UTHER03');
+REPLACE INTO `script_texts` VALUES (-1668452,'Jaina, écoute-moi. Il faut détruire le Roi-Liche. Il n\'est pas possible de discuter avec lui. Il va te tuer, toi et tes alliés, et vous relever comme puissant soldats du Fléau.', null, null, null, null, null, null, null, null, 16669,0,0,1,'UTHER_TO_JAINA04');
+REPLACE INTO `script_texts` VALUES (-1668454,'Uther, dites-moi comment. Comment détruire mon prince ? Mon...', null, null, null, null, null, null, null, null, 16638,0,0,1,'JAINA_TO_UTHER04');
+REPLACE INTO `script_texts` VALUES (-1668456,'Oh réveille-toi, ma fille. Il faut l\'anéantir à l\'endroit où il a fusionné avec Ner\'zhul, en haut de la tour, devant le Trône de Glace. C\'est le seul moyen.', null, null, null, null, null, null, null, null, 16670,0,0,1,'UTHER_TO_JAINA05');
+REPLACE INTO `script_texts` VALUES (-1668458,'Vous avez raison, Uther. Pardonnez-moi. Je... Je ne sais pas ce qui m’a pris. Je vais porter ces informations au roi et aux chevaliers qui combattent le Fléau dans la citadelle de la Couronne de glace.', null, null, null, null, null, null, null, null, 16639,0,0,1,'JAINA_TO_UTHER05');
+REPLACE INTO `script_texts` VALUES (-1668459,'Il y a... Autre chose à savoir sur le Roi-Liche. Il ne faut jamais que le Fléau se retrouve sans contrôle. Même si vous parvenez à abbattre le Roi-Liche, il faut qu\'un autre prenne sa place. Car, sans son emprise, le Fléau serait lâché sur ce monde et détruirait toute vie.', null, null, null, null, null, null, null, null, 16671,0,0,1,'UTHER_TO_JAINA06');
+REPLACE INTO `script_texts` VALUES (-1668460,' Mais hélas, le seul moyen de le vaincre est de l’abattre à l’endroit où il fut créé.', null, null, null, null, null, null, null, null, 16664,0,0,1,'UTHER_TO_JAINA07');
+REPLACE INTO `script_texts` VALUES (-1668461,'Qui pourrait porter un tel fardeau ?', null, null, null, null, null, null, null, null, 16640,0,0,1,'JAINA_TO_UTHER06');
+REPLACE INTO `script_texts` VALUES (-1668463,'Un grand sacrifice par une âme noble...', null, null, null, null, null, null, null, null, 16672,0,0,1,'67234');
+REPLACE INTO `script_texts` VALUES (-1668464,'Je ne sais pas, Jaina. Je suspecte le fragment d’Arthas qui reste peut-être enfoui dans l’esprit du Roi-Liche d’être tout ce qui retient le Fléau d’annihiler Azeroth.', null, null, null, null, null, null, null, null, 16673,0,0,1,'UTHER_TO_JAINA08');
+REPLACE INTO `script_texts` VALUES (-1668465,'Alors il reste peut-être un espoir...', null, null, null, null, null, null, null, null, 16641,0,0,1,'JAINA_TO_UTHER07');
+REPLACE INTO `script_texts` VALUES (-1668466,'Non, Jaina! ARRRRRRGHHHH... Il... Il arrive. Tu... Tu dois...', null, null, null, null, null, null, null, null, 16674,1,0,1,'UTHER_TO_JAINA09');
+REPLACE INTO `script_texts` VALUES (-1668471,' Tu ne m’en empêcheras pas, Arthas ! Il faut que je sache... Je dois savoir...', null, null, null, null, null, null, null, null, 16642,1,0,1,'JAINA_TO_LICHKING01');
+
+/* PNJ :
+Le Roi-Liche & Le Fléau. */
+REPLACE INTO `script_texts` VALUES (-1668468,'SILENCE, PALADIN !', null, null, null, null, null, null, null, null, 17225,1,0,0,'LICHKING01');
+REPLACE INTO `script_texts` VALUES (-1668469,'Alors comme ça, vous voulez converser avec les morts ? Je vais exaucer votre souhait.', null, null, null, null, null, null, null, null, 17226,1,0,0,'LICHKING02');
+REPLACE INTO `script_texts` VALUES (-1668475,'À vos ordres, mon seigneur.', null, null, null, null, null, null, null, null, 16717,1,0,0,'FALRIC_TO_LICHKING');
+REPLACE INTO `script_texts` VALUES (-1668476,'À vos ordres, mon seigneur.', null, null, null, null, null, null, null, null, 16741,1,0,0,'MARWYN_TO_LICHKING');
+REPLACE INTO `script_texts` VALUES (-1668470,'Falric, Marwyn. Traînez leurs corps jusqu’à mon trône quand vous aurez fini.', null, null, null, null, null, null, null, null, 17227,0,0,0,'LICHKING03');
+REPLACE INTO `script_texts` VALUES (-1668505,'Soldats de Lordaeron, répondez à l\'appel de votre maître !', null, null, null, null, null, null, null, null, 16714,1,0,0,'FALRIC_POP_ADDS');
+REPLACE INTO `script_texts` VALUES (-1668474,'Je ne ferai pas la même erreur une deuxième fois, Sylvanas. Cette fois, tu ne m\'échapperas pas. Tu as échoué à me servir dans la non-mort. Tout ce qui t\'attend désormais est le néant !', null, null, null, null, null, null, null, null, 17228,1,0,0,'LICHKING_TO_SYLVANAS01');
+REPLACE INTO `script_texts` VALUES (-1668473,'Je l\'ai cervellé. Ce que vous cherchez, je l\'ai tué il y a bien longtemps. Il n\'est plus qu\'un fantôme, un échos lointain dans mon esprit.', null, null, null, null, null, null, null, null, 17229,1,0,0,'LICHKING_TO_JAINA01');
+
+/* Boss :
+Falric. */
+REPLACE INTO `script_texts` VALUES (-1668507,'Hommes, femmes, enfants... Nul n\'a échappé au courroux du maître. Vos morts ne seront pas différentes.', null, null, null, null, null, null, null, null, 16710,1,0,0,'FALRIC_AGGRO');
+REPLACE INTO `script_texts` VALUES (-1668508,'Marwyn, charge-toi d\'eux...', null, null, null, null, null, null, null, null, 16713,1,0,0,'FALRIC_DEATH');
+REPLACE INTO `script_texts` VALUES (-1668509,'Vermisseaux pleunicheurs !', null, null, null, null, null, null, null, null, 16711,1,0,0,'FALRIC01');
+REPLACE INTO `script_texts` VALUES (-1668510,'Les enfants de Stratholme se battaient mieux que ça !', null, null, null, null, null, null, null, null, 16712,1,0,0,'FALRIC02');
+REPLACE INTO `script_texts` VALUES (-1668511,'Le désespoir... Si délicieux...', null, null, null, null, null, null, null, null, 16715,1,0,0,'FALRIC03');
+REPLACE INTO `script_texts` VALUES (-1668512,'La peur... Si exaltante...', null, null, null, null, null, null, null, null, 16716,1,0,0,'FALRIC04');
+
+/* Boss :
+Marwyn. */
+REPLACE INTO `script_texts` VALUES (-1668506,'La maître s\'est penché sur son Royaume et a trouvé... Un parfait. Sa sentance plus rapide et sans pitié. La mort pour tous !', null, null, null, null, null, null, null, null, 16738,1,0,0,'67234');
+REPLACE INTO `script_texts` VALUES (-1668513,'Et la mort est tout ce que vous trouverez ici !', null, null, null, null, null, null, null, null, 16734,1,0,0,'MARWYN_AGGRO');
+REPLACE INTO `script_texts` VALUES (-1668514,'Oui... Courez... Courez vers votre destin... Son étreinte froide et amère vous attend.', null, null, null, null, null, null, null, null, 16737,1,0,0,'MARWYN_DEATH');
+REPLACE INTO `script_texts` VALUES (-1668515,'J\'ai vu le même regard passer dans ses yeux à sa mort. Terenas, il n\'arrivait pas à y croire. Ahahahah !', null, null, null, null, null, null, null, null, 16735,1,0,0,'MARWYN01');
+REPLACE INTO `script_texts` VALUES (-1668516,'Que la souffrance vous étouffe !', null, null, null, null, null, null, null, null, 16736,1,0,0,'MARWYN02');
+REPLACE INTO `script_texts` VALUES (-1668517,'Votre chair va se décomposer sous vos yeux !', null, null, null, null, null, null, null, null, 16739,1,0,0,'MARWYN03');
+REPLACE INTO `script_texts` VALUES (-1668518,'Flétrissez-vous, jusqu\'au néant !', null, null, null, null, null, null, null, null, 16740,1,0,0,'MARWYN04');
+
+/* Boss :
+Le Roi-liche. */
+REPLACE INTO `gossip_texts` VALUES (-3594540,'C\'est parti !', null, null, null, null, null, null, null, null,'START_EVENT_LICHKING');
+REPLACE INTO `script_texts` VALUES (-1668477,'Vos alliés sont arrivés, Jaina, comme vous l\'aviez promis. Vous ferez tous de puissants agents du Fléau.', null, null, null, null, null, null, null, null, 17212,1,0,0,'LICHKING_TO_JAINA02');
+REPLACE INTO `script_texts` VALUES (-1668478,'Je ne ferai pas la même erreur une deuxième fois, Sylvanas. Cette fois, tu ne m\'échapperas pas. Vous me servirez tous dans la non-mort.', null, null, null, null, null, null, null, null, 17213,1,0,0,'LICHKING_TO_SYLVANAS0');
+REPLACE INTO `script_texts` VALUES (-1668492,'Encore un cul-de-sac !', null, null, null, null, null, null, null, null, 17219,1,0,0,'LICHKING04');
+REPLACE INTO `script_texts` VALUES (-1668493,'Combien de temps allez-vous tenir ?', null, null, null, null, null, null, null, null, 17220,1,0,0,'LICHKING05');
+REPLACE INTO `script_texts` VALUES (-1668481,'La froide étreinte de la mort vous attend.', null, null, null, null, null, null, null, null, 17221,1,0,0,'LICHKING06');
+REPLACE INTO `script_texts` VALUES (-1668482,'Debout serviteurs, ne les laissez pas passer !', null, null, null, null, null, null, null, null, 17216,1,0,0,'LICHKING07');
+REPLACE INTO `script_texts` VALUES (-1668483,'Attrapez-les, serviteurs. Rapportez-moi leurs cadavres !', null, null, null, null, null, null, null, null, 17222,1,0,0,'LICHKING08');
+REPLACE INTO `script_texts` VALUES (-1668484,'Aucun espoir...', null, null, null, null, null, null, null, null, 17214,1,0,0,'LICHKING09');
+REPLACE INTO `script_texts` VALUES (-1668485,'Tout est perdu !', null, null, null, null, null, null, null, null, 17215,1,0,0,'LICHKING10');
+REPLACE INTO `script_texts` VALUES (-1668486,'Vous ne vous échapperez pas !', null, null, null, null, null, null, null, null, 17217,1,0,0,'LICHKING11');
+REPLACE INTO `script_texts` VALUES (-1668504,'Plus aucune issue ! Vous êtes à moi maintenant...', null, null, null, null, null, null, null, null, 17223,1,0,0,'LICHKING12');
+REPLACE INTO `script_texts` VALUES (-1668491,'Succombez au froid de la tombe', null, null, null, null, null, null, null, null, 17218,1,0,0,'LICHKING13');
+
+/* Event de fuite
+PNJ :
+Dame Jaina Portvaillant. */
+REPLACE INTO `script_texts` VALUES (-1668479,'Il est trop fort. Il faut vite partir d’ici ! Ma magie ne pourra le retenir qu\'un court instant. Venez vite, héros !', null, null, null, null, null, null, null, null, 16644,0,0,1,'JAINA_TO_PLAYER05');
+REPLACE INTO `script_texts` VALUES (-1668487,'Je vais détruire cette barrière. Tenez les morts-vivants à distance !', null, null, null, null, null, null, null, null, 16607,1,0,0,'JAINA_TO_PLAYER06');
+REPLACE INTO `script_texts` VALUES (-1668489,'Un autre mur de glace ! Empêchez les morts-vivants d\'interrompre mon incantation, je vais le détruire !', null, null, null, null, null, null, null, null, 16608,1,0,0,'JAINA_TO_PLAYER07');
+REPLACE INTO `script_texts` VALUES (-1668498,'Il y a une ouverture là-bas. VITE !', null, null, null, null, null, null, null, null, 16645,1,0,0,'JAINA_TO_PLAYER08');
+REPLACE INTO `script_texts` VALUES (-1668499,'Nous y sommes presque... N’abandonnez pas !', null, null, null, null, null, null, null, null, 16646,1,0,0,'JAINA_TO_PLAYER09');
+REPLACE INTO `script_texts` VALUES (-1668495,'Tes murs ne nous retiendront plus très longtemps, monstre ! Je vais tous les démolir !', null, null, null, null, null, null, null, null, 16610,1,0,0,'JAINA_TO_LICHKING02');
+REPLACE INTO `script_texts` VALUES (-1668494,'Il s\'amuse avec nous. Je vais lui montrer ce qu\'il arrive quand la glace rencontre le feu !', null, null, null, null, null, null, null, null, 16609,0,0,0,'JAINA_TO_PLAYER10');
+REPLACE INTO `script_texts` VALUES (-1668502,'C\'est... C\'est un cul-de-sac. Nous n’avons plus le choix, il faut nous battre. Préparez-vous à vendre chèrement vos vies, héros.', null, null, null, null, null, null, null, null, 16647,1,0,0,'JAINA_TO_PLAYER11');
+
+/* PNJ :
+Dame Sylvanas Coursevent. */
+REPLACE INTO `script_texts` VALUES (-1668480,'Il est... Trop fort. Héros, vite... À moi ! Il faut quitter cet endroit au plus vite ! Je vais faire ce que je peux pour le bloquer pendant notre fuite.', null, null, null, null, null, null, null, null, 17058,0,0,1,'SYLVANAS_TO_PLAYER04');
+REPLACE INTO `script_texts` VALUES (-1668488,'Aucun mur ne peut résister à la Reine Banshee. Tenez les morts-vivants à distance, héros. Je vais abattre cette barrière !', null, null, null, null, null, null, null, null, 17029,1,0,0,'SYLVANAS_TO_PLAYER05');
+REPLACE INTO `script_texts` VALUES (-1668490,'Encore une barrière ! Tenez bon, champions. Je vais la détruire.', null, null, null, null, null, null, null, null, 17030,1,0,0,'SYLVANAS_TO_PLAYER06');
+REPLACE INTO `script_texts` VALUES (-1668496,'Ces petits jeux commencent à me fatiguer, Arthas ! Tes murs ne pourront pas m\'arrêter !', null, null, null, null, null, null, null, null, 17031,1,0,0,'SYLVANAS_TO_LICHKING02');
+REPLACE INTO `script_texts` VALUES (-1668497,'Tu n\'enrayeras pas notre fuite, démon ! Empêchez les morts-vivants de m\'atteindre pendant que j\'abats ce mur.', null, null, null, null, null, null, null, null, 17032,1,0,0,'SYLVANAS_TO_LICHKING03');
+REPLACE INTO `script_texts` VALUES (-1668500,'Il y a une ouverture là-bas. ALLEZ ! VITE !', null, null, null, null, null, null, null, null, 17059,1,0,0,'SYLVANAS_TO_PLAYER07');
+REPLACE INTO `script_texts` VALUES (-1668501,'Nous y sommes presque ! N\'abandonnez pas !', null, null, null, null, null, null, null, null, 17060,1,0,0,'SYLVANAS_TO_PLAYER08');
+REPLACE INTO `script_texts` VALUES (-1668503,'MAUDIT CUL-DE-SAC ! C\'est donc la fin. Préparez-vous, héros, nous allons vendre chèrement nos vies !', null, null, null, null, null, null, null, null, 17061,1,0,0,'SYLVANAS_TO_PLAYER09');
+
+
+
+
+/******************************************
+Citadelle de la Couronne de glace
+*******************************************/
+
+/* Game Object :
+Téléporteur (Scourge transporter). */
+REPLACE INTO `gossip_texts` VALUES (-3631600,'Marteau de Lumière', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 1');
+REPLACE INTO `gossip_texts` VALUES (-3631601,'Oratoire des damnés', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 2');
+REPLACE INTO `gossip_texts` VALUES (-3631602,'Rempart des Crânes', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 3');
+REPLACE INTO `gossip_texts` VALUES (-3631603,'Cime du Porte-mort', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 4');
+REPLACE INTO `gossip_texts` VALUES (-3631604,'Citadelle de la Couronne de glace', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 5');
+REPLACE INTO `gossip_texts` VALUES (-3631606,'Le repaire de la reine du Givre', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 7');
+REPLACE INTO `gossip_texts` VALUES (-3631607,'Le Trône de glace', null, null, null, null, null, null, null, null,'IceCrown citadel teleporter text 8');
+
+/* Boss :
+Seigneur Gargamoelle. */
+REPLACE INTO `script_texts` VALUES ('-1631001', 'Pour vous, c\'est le début ET la fin, mortels. Personne ne pénètre dans le sanctuaire du maître !', null, null, null, null, null, null, null, null, '16950', '1', '0', '0', 'marrowgar SAY_INTRO');
+REPLACE INTO `script_texts` VALUES ('-1631002', 'Le Fléau va déferler sur ce monde dans un torrent de mort et de destruction !', null, null, null, null, null, null, null, null, '16941', '1', '0', '0', 'marrowgar SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631003', 'TEMPÊTE DANS UN VERRE D\'OS !', null, null, null, null, null, null, null, null, '16946', '1', '0', '0', 'marrowgar SAY_BONE_STORM');
+REPLACE INTO `script_texts` VALUES ('-1631004', 'Liés par les os !', null, null, null, null, null, null, null, null, '16947', '1', '0', '0', 'marrowgar SAY_BONE_SPIKE_1');
+REPLACE INTO `script_texts` VALUES ('-1631005', 'Ne vous sauvez pas !', null, null, null, null, null, null, null, null, '16948', '1', '0', '0', 'marrowgar SAY_BONE_SPIKE_2');
+REPLACE INTO `script_texts` VALUES ('-1631006', 'La seule issue est la mort !', null, null, null, null, null, null, null, null, '16949', '1', '0', '0', 'marrowgar SAY_BONE_SPIKE_3');
+REPLACE INTO `script_texts` VALUES ('-1631007', 'Toujours plus d\'os pour les offrandes !', null, null, null, null, null, null, null, null, '16942', '1', '0', '0', 'marrowgar SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631008', 'Morfondez-vous dans la damnation !', null, null, null, null, null, null, null, null, '16943', '1', '0', '0', 'marrowgar SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631009', 'Je ne vois... Que les ténèbres.', null, null, null, null, null, null, null, null, '16944', '1', '0', '0', 'marrowgar SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631010', 'LA RAGE DU MAÎTRE COULE DANS MES VEINES !', null, null, null, null, null, null, null, null, '16945', '1', '0', '0', 'marrowgar SAY_BERSERK');
+
+/* Boss :
+Dame Murmemort. */
+REPLACE INTO `script_texts` VALUES ('-1631011', 'Vous êtes arrivés ici, car vous faites partis des rares élus dôtés d\'une vraie vision dans un monde affligé par l\'aveuglement.', null, null, null, null, null, null, null, null, '17272', '1', '0', '0', 'deathwhisper SAY_SPEECH_1');
+REPLACE INTO `script_texts` VALUES ('-1631012', 'Vous voyez au delà de la brume qui pèse sur ce monde comme un lourd voile, et comprenez où se trouve la vraie puissance.', null, null, null, null, null, null, null, null, '17273', '1', '0', '0', 'deathwhisper SAY_SPEECH_2');
+REPLACE INTO `script_texts` VALUES ('-1631013', 'Prenez le temps de regarder vos si grossières mains : les tendons, cette chair si molle, le sang qui s\'y écoule.', null, null, null, null, null, null, null, null, '16878', '1', '0', '0', 'deathwhisper SAY_SPEECH_3');
+REPLACE INTO `script_texts` VALUES ('-1631014', 'C\'est une faiblesse, une accablante imperfection... Une blague des créateurs en dépend de leur propre création.', null, null, null, null, null, null, null, null, '17268', '1', '0', '0', 'deathwhisper SAY_SPEECH_4');
+REPLACE INTO `script_texts` VALUES ('-1631015', 'Plus vite vous accepterez les lacunes de votre condition, plus vite il vous sera possible de la transcender.', null, null, null, null, null, null, null, null, '17269', '1', '0', '0', 'deathwhisper SAY_SPEECH_5');
+REPLACE INTO `script_texts` VALUES ('-1631016', 'Grâce à notre maître, tout est possible. Son pouvoir est sans limite, et sa volonté inflexible.', null, null, null, null, null, null, null, null, '17270', '1', '0', '0', 'deathwhisper SAY_SPEECH_6');
+REPLACE INTO `script_texts` VALUES ('-1631017', 'Ceux qui s\'opposent à lui seront anéantis, et ceux qui le servent, sans retenue ni hésitation, avec une totale dévotion de l\'âme et de l\'esprit... Ceux-là seront élevés à des hauteurs qui vous dépassent.', null, null, null, null, null, null, null, null, '17271', '1', '0', '0', 'deathwhisper SAY_SPEECH_7');
+REPLACE INTO `script_texts` VALUES ('-1631018', 'Quelle est cette perturbation ? Vous osez profaner cette terre sacrée ? Elle deviendra votre sépulture !', null, null, null, null, null, null, null, null, '16868', '1', '0', '0', 'deathwhisper SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631019', 'Assez ! Je vois qu\'il faut que je prenne la situation en mains !', null, null, null, null, null, null, null, null, '16877', '1', '0', '0', 'deathwhisper SAY_PHASE_TWO');
+REPLACE INTO `script_texts` VALUES ('-1631020', 'Reçois ma bénédiction, et offre à ces intrus un aperçu de la puissance du maître !', null, null, null, null, null, null, null, null, '16873', '1', '0', '0', 'deathwhisper SAY_DARK_EMPOWERMENT');
+REPLACE INTO `script_texts` VALUES ('-1631021', 'Loyal partisan, je te libère de la malédiction de la chair !', null, null, null, null, null, null, null, null, '16874', '1', '0', '0', 'deathwhisper SAY_DARK_TRANSFORMATION');
+REPLACE INTO `script_texts` VALUES ('-1631022', 'Lève-toi, dans l\'exultation de cette nouvelle pureté !', null, null, null, null, null, null, null, null, '16875', '1', '0', '0', 'deathwhisper SAY_ANIMATE_DEAD');
+REPLACE INTO `script_texts` VALUES ('-1631023', 'Vous êtes faibles, impuissant devant ma volonté !', null, null, null, null, null, null, null, null, '16876', '1', '0', '0', 'deathwhisper SAY_DOMINATE_MIND');
+REPLACE INTO `script_texts` VALUES ('-1631024', 'Cette supercherie n\'a que trop durée !', null, null, null, null, null, null, null, null, '16872', '1', '0', '0', 'deathwhisper SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631025', 'Le maître avait tout prévu... Votre fin est inévitable...', null, null, null, null, null, null, null, null, '16871', '1', '0', '0', 'deathwhisper SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631026', ' Saisissez-vous maintenant la futilité de vos actes ?', null, null, null, null, null, null, null, null, '16869', '1', '0', '0', 'deathwhisper SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631027', 'Acceptez les ténèbres... Éternelles !', null, null, null, null, null, null, null, null, '16870', '1', '0', '0', 'deathwhisper SAY_SLAY_2');
+
+/* Boss :
+Porte-mort Saurcroc. */
+REPLACE INTO `script_texts` VALUES ('-1631041', 'Kor\'krons, en route ! Champions, surveillez bien vos arrières. Le Fléau a été...', null, null, null, null, null, null, null, null, '17103', '1', '0', '0', 'overlord SAY_INTRO_HORDE_1');
+REPLACE INTO `script_texts` VALUES ('-1631042', 'Rejoins-moi, père. Rejoins-moi, et ensemble nous écraserons ce monde au nom du Fléau, pour la gloire du roi-liche !', null, null, null, null, null, null, null, null, '16704', '1', '0', '0', 'saurfang SAY_INTRO_HORDE_2');
+REPLACE INTO `script_texts` VALUES ('-1631043', 'Mon fils est mort au portail du Courroux. Je ne suis là que pour récupérer son corps.', null, null, null, null, null, null, null, null, '17097', '0', '0', '0', 'overlord SAY_INTRO_HORDE_3');
+REPLACE INTO `script_texts` VALUES ('-1631044', 'Vieil orc têtu. Quelles sont tes chances ? Je suis plus fort et plus puissant que tu ne l’as jamais été.', null, null, null, null, null, null, null, null, '16705', '1', '0', '0', 'saurfang SAY_INTRO_HORDE_4');
+REPLACE INTO `script_texts` VALUES ('-1631045', ' Nous l’avions appelé Dranosh. Ça veut dire : « Cœur de Draenor » en orc. J’avais refusé que les démonistes l’emmènent. Mon fils devait rester en sécurité, caché par les anciens de Garadar.', null, null, null, null, null, null, null, null, '17098', '0', '0', '0', 'overlord SAY_INTRO_HORDE_5');
+REPLACE INTO `script_texts` VALUES ('-1631046', 'Avant qu’elle ne meure, j’ai juré à sa mère que je franchirais seul la Porte des ténèbres. Que je survive ou pas, mon fils serait sauvé. Sauvé de la corruption.', null, null, null, null, null, null, null, null, '17099', '0', '0', '0', 'overlord SAY_INTRO_HORDE_6');
+REPLACE INTO `script_texts` VALUES ('-1631047', 'Aujourd’hui, je viens tenir cette promesse.', null, null, null, null, null, null, null, null, '17100', '0', '0', '0', 'overlord SAY_INTRO_HORDE_7');
+REPLACE INTO `script_texts` VALUES ('-1631048', 'Haut seigneur Saurcroc commence à charger !', null, null, null, null, null, null, null, null, '17104', '2', '0', '0', 'overlord SAY_INTRO_HORDE_8');
+REPLACE INTO `script_texts` VALUES ('-1631049', 'Pitoyable vieillard ! Venez donc, héros. Venez affronter la puissance du Fléau !', null, null, null, null, null, null, null, null, '16706', '1', '0', '0', 'saurfang SAY_INTRO_HORDE_9');
+REPLACE INTO `script_texts` VALUES ('-1631028', 'PAR LA PUISSANCE DU ROI-LICHE !', null, null, null, null, null, null, null, null, '16694', '1', '0', '0', 'saurfang SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631029', 'La terre est rouge de votre sang !', null, null, null, null, null, null, null, null, '16699', '1', '0', '0', 'saurfang SAY_FALLENCHAMPION');
+REPLACE INTO `script_texts` VALUES ('-1631030', 'Repaissez-vous, mes serviteurs !', null, null, null, null, null, null, null, null, '16700', '1', '0', '0', 'saurfang SAY_BLOODBEASTS');
+REPLACE INTO `script_texts` VALUES ('-1631031', 'Vous n\'êtes rien !', null, null, null, null, null, null, null, null, '16695', '1', '0', '0', 'saurfang SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631032', 'Ici pas de salut pour les hommes !', null, null, null, null, null, null, null, null, '16696', '1', '0', '0', 'saurfang SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631033', 'Je deviens... LA MORT !', null, null, null, null, null, null, null, null, '16698', '1', '0', '0', 'saurfang SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631034', 'Je... Suis... Libre...', null, null, null, null, null, null, null, null, '16697', '1', '0', '0', 'saurfang SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631066', '%s tousse.', null, null, null, null, null, null, null, null, '17105', '2', '0', '0', 'overlord SAY_OUTRO_HORDE_1');
+REPLACE INTO `script_texts` VALUES ('-1631067', '%s pleure sur le corps de son fils.', null, null, null, null, null, null, null, null, '17106', '2', '0', '0', 'overlord SAY_OUTRO_HORDE_2');
+REPLACE INTO `script_texts` VALUES ('-1631068', 'Tu auras droit à de vraies funérailles, à Nagrand, à côté des bûchers de ta mère et de tes ancêtres.', null, null, null, null, null, null, null, null, '17101', '0', '0', '0', 'overlord SAY_OUTRO_HORDE_3');
+REPLACE INTO `script_texts` VALUES ('-1631069', 'L’honneur, jeunes héros... Même dans la plus terrible des batailles... Ne perdez jamais l\'honneur.', null, null, null, null, null, null, null, null, '17102', '0', '0', '0', 'overlord SAY_OUTRO_HORDE_4');
+
+/* Boss :
+Pulentraille. */
+REPLACE INTO `script_texts` VALUES ('-1631081', 'OH NOOOON ! Kifouette est morte ! Maintenant vous payez !', null, null, null, null, null, null, null, null, '16907', '6', '0', '0', 'festergut SAY_STINKY_DIES');
+REPLACE INTO `script_texts` VALUES ('-1631082', 'On joue ?', null, null, null, null, null, null, null, null, '16901', '1', '0', '0', 'festergut SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631083', 'Ce n\'est qu\'un banal nuage. Mais attention, ce nuage, il n\'est pas banal ! ', null, null, null, null, null, null, null, null, '17119', '1', '0', '0', 'putricide SAY_BLIGHT');
+REPLACE INTO `script_texts` VALUES ('-1631084', '%s pète.', null, null, null, null, null, null, null, null, '16911', '2', '0', '0', 'festergut SAY_SPORE');
+REPLACE INTO `script_texts` VALUES ('-1631085', 'Je sens pas très bien...', null, null, null, null, null, null, null, null, '16906', '1', '0', '0', 'festergut SAY_PUNGUENT_BLIGHT');
+REPLACE INTO `script_texts` VALUES ('-1631086', '%s vomit.', null, null, null, null, null, null, null, null, '0', '2', '0', '0', 'festergut SAY_PUNGUENT_BLIGHT_EMOTE');
+REPLACE INTO `script_texts` VALUES ('-1631087', 'Papa, j\'ai réussi !', null, null, null, null, null, null, null, null, '16902', '1', '0', '0', 'festergut SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631088', 'Mort, mort, mort !', null, null, null, null, null, null, null, null, '16903', '1', '0', '0', 'festergut SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631089', 'On arrête de jouer !', null, null, null, null, null, null, null, null, '16905', '1', '0', '0', 'festergut SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631090', 'Pa... Pa...', null, null, null, null, null, null, null, null, '16904', '1', '0', '0', 'festergut SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631091', 'Oh, Pulentraille. Tu as toujours été mon préféré. Après Trognepus. La bonne nouvelle c\'est que tu m\'as laissé plein de gaz, des tonnes des tonnes des tonnes de gaz !', null, null, null, null, null, null, null, null, '17124', '6', '0', '0', 'putricide SAY_FESTERGUT_DEATH');
+
+/* Boss :
+Trognepus. */
+REPLACE INTO `script_texts` VALUES ('-1631070', 'Quoi ? Bijou ? Noooooooooon !!!', null, null, null, null, null, null, null, null, '16993', '6', '0', '0', 'rotface SAY_PRECIOUS_DIES');
+REPLACE INTO `script_texts` VALUES ('-1631071', 'Wiiiiiiiiiii !', null, null, null, null, null, null, null, null, '16986', '1', '0', '0', 'rotface SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631072', 'C\'est tout embué.', null, null, null, null, null, null, null, null, '16991', '1', '0', '0', 'rotface SAY_SLIME_SPRAY');
+REPLACE INTO `script_texts` VALUES ('-1631073', 'Je crois que j\'ai fait un caca méchant. Ça va exploser !', null, null, null, null, null, null, null, null, '16992', '1', '0', '0', 'rotface SAY_OOZE_EXPLODE');
+REPLACE INTO `script_texts` VALUES ('-1631074', 'Merveilleuse nouvelle mes amis ! La gelée coule à flot !', null, null, null, null, null, null, null, null, '17126', '1', '0', '0', 'putricide SAY_SLIME_FLOW_1');
+REPLACE INTO `script_texts` VALUES ('-1631075', 'Grande nouvelle, mes amis ! J\'ai réparé le distributeur de poison !', null, null, null, null, null, null, null, null, '17123', '1', '0', '0', 'putricide SAY_SLIME_FLOW_2');
+REPLACE INTO `script_texts` VALUES ('-1631076', 'Oh ! C\'est cassé !', null, null, null, null, null, null, null, null, '16987', '1', '0', '0', 'rotface SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631077', 'Papa va faire des nouveaux jouets avec toi !', null, null, null, null, null, null, null, null, '16988', '1', '0', '0', 'rotface SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631078', 'C\'est l\'heure du dodo !', null, null, null, null, null, null, null, null, '16990', '1', '0', '0', 'rotface SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631079', 'Mauvaise nouvelle, papa...', null, null, null, null, null, null, null, null, '16989', '1', '0', '0', 'rotface SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631080', 'Effroyable nouvelle mes amis, Trognepus est mort ! Mais grande nouvelle mes amis, il m\'a laissé du limon en repas ! Waou... ? Je suis un poète, qui l\'ignore ? Éboustourifiant !!', null, null, null, null, null, null, null, null, '17146', '6', '0', '0', 'putricide SAY_ROTFACE_DEATH');
+
+/* Boss :
+Professeur Putricide. */
+REPLACE INTO `script_texts` VALUES ('-1631092', 'Grande nouvelle, mes amis ! Je crois que j\'ai mis au point une peste qui va détruire toute vie sur Azeroth !', null, null, null, null, null, null, null, null, '17114', '1', '0', '0', 'putricide SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631093', 'Mais vous ne pouvez pas entrer ici tout sale comme ça ! Il va d\'abord falloir me nettoyer toute cette chair toute dégoûtante !', null, null, null, null, null, null, null, null, '', '1', '0', '0', 'putricide SAY_AIRLOCK');
+REPLACE INTO `script_texts` VALUES ('-1631094', 'Un limon ça va, deux limons, bonjour les dégâts !', null, null, null, null, null, null, null, null, '17122', '1', '0', '0', 'putricide SAY_PHASE_CHANGE');
+REPLACE INTO `script_texts` VALUES ('-1631095', 'Mmm, je ne sens plus rien. Woah ?! Mais ça vient d\'où, tout ça ?', null, null, null, null, null, null, null, null, '17120', '1', '0', '0', 'putricide SAY_TRANSFORM_1');
+REPLACE INTO `script_texts` VALUES ('-1631096', 'Au bon goût de... Cerise ! Oh ! Pardon !', null, null, null, null, null, null, null, null, '17121', '1', '0', '0', 'putricide SAY_TRANSFORM_2');
+REPLACE INTO `script_texts` VALUES ('-1631097', 'Mmm... Intéressant...', null, null, null, null, null, null, null, null, '17115', '1', '0', '0', 'putricide SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631098', 'Un développement inattendu !', null, null, null, null, null, null, null, null, '17116', '1', '0', '0', 'putricide SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631099', 'Fantastique nouvelle, mes amis !', null, null, null, null, null, null, null, null, '17118', '1', '0', '0', 'putricide SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631100', 'Mauvaise nouvelle, mes amis... Je crois que je ne vais pas passer l\'hiver...', null, null, null, null, null, null, null, null, '17117', '1', '0', '0', 'putricide SAY_DEATH');
+
+/* Boss :
+Conseil des Princes de Sang. */
+REPLACE INTO `script_texts` VALUES ('-1631101', 'Naïfs mortels. Vous pensiez nous avoir vaincus si facilement ? Les San\'layn sont les soldats immortels du Roi Liche ! Maintenant vous allez subir leur puissance réunie !', null, null, null, null, null, null, null, null, '16795', '6', '0', '0', 'lanathel SAY_COUNCIL_INTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1631102', 'Relevez-vous, mes frères, et anéantissez l\'ennemi !', null, null, null, null, null, null, null, null, '16796', '6', '0', '0', 'lanathel SAY_COUNCIL_INTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1631103', 'Quel incroyable pouvoir ! L\'orbe des Ténébrants m\'a rendu INVINCIBLE !', null, null, null, null, null, null, null, null, '16727', '1', '0', '0', 'keleseth SAY_KELESETH_INVOCATION');
+REPLACE INTO `script_texts` VALUES ('-1631104', 'Le sang va couler !', null, null, null, null, null, null, null, null, '16728', '1', '0', '0', 'keleseth SAY_KELESETH_SPECIAL');
+REPLACE INTO `script_texts` VALUES ('-1631105', 'Quelle menace posez-vous ?', null, null, null, null, null, null, null, null, '16723', '1', '0', '0', 'keleseth SAY_KELESETH_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631106', 'Du sang et de l\'acier surgit la vérité.', null, null, null, null, null, null, null, null, '16724', '1', '0', '0', 'keleseth SAY_SKELESETH_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631107', '%s glousse maniaquement !', null, null, null, null, null, null, null, null, '16726', '2', '0', '0', 'keleseth SAY_KELESETH_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631108', 'Ma reine, ils... Arrivent.', null, null, null, null, null, null, null, null, '16725', '1', '0', '0', 'keleseth SAY_KELESETH_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631109', 'Tremblez devant Taldaram, mortels, car le pouvoir de l\'orbe coule en moi !', null, null, null, null, null, null, null, null, '16857', '1', '0', '0', 'taldaram SAY_TALDARAM_INVOCATION');
+REPLACE INTO `script_texts` VALUES ('-1631110', 'Savourez la douleur !', null, null, null, null, null, null, null, null, '16858', '1', '0', '0', 'taldaram SAY_TALDARAM_SPECIAL');
+REPLACE INTO `script_texts` VALUES ('-1631111', 'À manger pour les asticots.', null, null, null, null, null, null, null, null, '16853', '1', '0', '0', 'taldaram SAY_TALDARAM_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631112', 'Implorez pitié !', null, null, null, null, null, null, null, null, '16854', '1', '0', '0', 'taldaram SAY_TALDARAM_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631113', '%s rit.', null, null, null, null, null, null, null, null, '16856', '2', '0', '0', 'taldaram SAY_TALDARAM_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631114', '%s gargouille et meurt.', null, null, null, null, null, null, null, null, '16855', '2', '0', '0', 'taldaram SAY_TALDARAM_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631115', 'Naxxanar ne fut qu\'un contretemps ! Grâce au pouvoir de l\'orbe, Valanar aura sa revanche !', null, null, null, null, null, null, null, null, '16685', '1', '0', '0', 'valanar SAY_VALANAR_INVOCATION');
+REPLACE INTO `script_texts` VALUES ('-1631116', 'Ma coupe déborde.', null, null, null, null, null, null, null, null, '16686', '1', '0', '0', 'valanar SAY_VALANAR_SPECIAL');
+REPLACE INTO `script_texts` VALUES ('-1631117', 'Le dîner... Est servi.', null, null, null, null, null, null, null, null, '16681', '1', '0', '0', 'valanar SAY_VALANAR_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631118', 'Voyez-vous la puissance des Ténébrants, à présent ?', null, null, null, null, null, null, null, null, '16682', '1', '0', '0', 'valanar SAY_VALANAR_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631119', 'À GENOUX DEVANT LE SAN\'LAYN!', null, null, null, null, null, null, null, null, '16684', '1', '0', '0', 'valanar SAY_VALANAR_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631120', 'Ooooooooooooh... Pourquoi ?', null, null, null, null, null, null, null, null, '16683', '1', '0', '0', 'valanar SAY_VALANAR_DEATH');
+
+/* Boss :
+Reine de sang Lana'thel. */
+REPLACE INTO `script_texts` VALUES ('-1631121', 'Ce n\'est pas une décision... Très sage.', null, null, null, null, null, null, null, null, '16782', '1', '0', '0', 'blood_queen SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631122', 'Je veux juste goûter...', null, null, null, null, null, null, null, null, '16783', '1', '0', '0', 'blood_queen SAY_BITE_1');
+REPLACE INTO `script_texts` VALUES ('-1631123', 'Voyez ma soif !', null, null, null, null, null, null, null, null, '16784', '1', '0', '0', 'blood_queen SAY_BITE_2');
+REPLACE INTO `script_texts` VALUES ('-1631124', 'SOUFFREZ !', null, null, null, null, null, null, null, null, '16786', '1', '0', '0', 'blood_queen SAY_SHADOWS');
+REPLACE INTO `script_texts` VALUES ('-1631125', 'Êtes-vous à la hauteur ?', null, null, null, null, null, null, null, null, '16787', '1', '0', '0', 'blood_queen SAY_PACT');
+REPLACE INTO `script_texts` VALUES ('-1631126', 'Oui ! Nourris-toi, trésor ! Tu es à moi, maintenant !', null, null, null, null, null, null, null, null, '16790', '1', '0', '0', 'blood_queen SAY_MC');
+REPLACE INTO `script_texts` VALUES ('-1631127', 'Ça vient...', null, null, null, null, null, null, null, null, '16788', '1', '0', '0', 'blood_queen SAY_AIR_PHASE');
+REPLACE INTO `script_texts` VALUES ('-1631324', 'La mort ne vous libèrera pas !', null, null, null, null, null, null, null, null, '16785', '1', '0', '0', 'Lanathel Add');
+REPLACE INTO `script_texts` VALUES ('-1631328', 'Quelle... Dommage...', null, null, null, null, null, null, null, null, '16789', '1', '0', '0', 'Lanathel Reset');
+REPLACE INTO `script_texts` VALUES ('-1631330', 'Vraiment ? Et c\'est tout ?', null, null, null, null, null, null, null, null, '16791', '1', '0', '0', 'Lanathel Slay 01');
+REPLACE INTO `script_texts` VALUES ('-1631331', 'Quel affreux gâchis.', null, null, null, null, null, null, null, null, '16792', '1', '0', '0', 'Lanathel Slay 02');
+REPLACE INTO `script_texts` VALUES ('-1631128', 'On arrête MAINTENANT !', null, null, null, null, null, null, null, null, '16793', '1', '0', '0', 'blood_queen SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631129', 'Mais... Tout allait si bien... Entre... Nous...', null, null, null, null, null, null, null, null, '16794', '1', '0', '0', 'blood_queen SAY_DEATH');
+
+/* PNJ :
+Sœur Svalna. */
+REPLACE INTO `script_texts` VALUES ('-1631138', 'Tu choisis bien mal tes alliés Crok.', null, null, null, null, null, null, null, null, '17021', '1', '0', '0', 'svalna SAY_KILL_PLAYER');
+REPLACE INTO `script_texts` VALUES ('-1631139', 'Peut-être... Que tu avais raison... Crok.', null, null, null, null, null, null, null, null, '17023', '1', '0', '0', 'svalna SAY_DEATH');
+
+/* Boss :
+Valithria Marcherêve. */
+REPLACE INTO `script_texts` VALUES ('-1631140', 'Héros, venez-moi en aide. Je... Je ne pourrai plus les retenir longtemps. Vous devez soigner mes blessures !', null, null, null, null, null, null, null, null, '17064', '1', '0', '0', 'dreamwalker SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631141', ' J\'ai ouvert un portail vers le Rêve. Vous y trouverez votre salut, héros...', null, null, null, null, null, null, null, null, '17068', '1', '0', '0', 'dreamwalker SAY_PORTAL');
+REPLACE INTO `script_texts` VALUES ('-1631142', 'Mes forces me reviennent. Continuez, héros !', null, null, null, null, null, null, null, null, '17070', '1', '0', '0', 'dreamwalker SAY_75_HEALTH');
+REPLACE INTO `script_texts` VALUES ('-1631143', 'Je ne tiendrais plus très longtemps !', null, null, null, null, null, null, null, null, '17069', '1', '0', '0', 'dreamwalker SAY_25_HEALTH');
+REPLACE INTO `script_texts` VALUES ('-1631144', 'Pardonnez-moi mes actes ! Je... Ne... Peux pas... SEULS SUBSISTENT LES CAUCHEMARDS!', null, null, null, null, null, null, null, null, '17072', '1', '0', '0', 'dreamwalker SAY_0_HEALTH');
+REPLACE INTO `script_texts` VALUES ('-1631145', 'Une perte tragique...', null, null, null, null, null, null, null, null, '17066', '1', '0', '0', 'dreamwalker SAY_PLAYER_DIES');
+REPLACE INTO `script_texts` VALUES ('-1631146', 'INCAPABLES !', null, null, null, null, null, null, null, null, '17067', '1', '0', '0', 'dreamwalker SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631147', 'JE REVIS ! Ysera, accorde-moi ta faveur, que je donne le repos à ces horribles créatures !', null, null, null, null, null, null, null, null, '17071', '1', '0', '0', 'dreamwalker SAY_VICTORY');
+
+/* Boss :
+Sindragosa. */
+REPLACE INTO `script_texts` VALUES ('-1631148', 'Qu\'il est stupide d\'être venus ici. Les vents glacés du Norfendre vont dévorer vos âmes !', null, null, null, null, null, null, null, null, '17007', '1', '0', '0', 'sindragosa SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631149', 'Voyez votre pitoyable magie vous trahir, mortels, et souffrez !', null, null, null, null, null, null, null, null, '17014', '1', '0', '0', 'sindragosa SAY_UNCHAINED_MAGIC');
+REPLACE INTO `script_texts` VALUES ('-1631150', 'Sentez-vous la main glacée de la mort sur vos cœurs ?', null, null, null, null, null, null, null, null, '17013', '1', '0', '0', 'sindragosa SAY_BLISTERING_COLD');
+REPLACE INTO `script_texts` VALUES ('-1631151', 'Aaah! Ça brûle! Quelle est cette sorcellerie ?!', null, null, null, null, null, null, null, null, '17015', '1', '0', '0', 'sindragosa SAY_RESPIRE');
+REPLACE INTO `script_texts` VALUES ('-1631152', 'Votre incursion s\'arrête ici ! Personne n\'en réchappera !', null, null, null, null, null, null, null, null, '17012', '1', '0', '0', 'sindragosa SAY_TAKEOFF');
+REPLACE INTO `script_texts` VALUES ('-1631153', 'Sentez maintenant le pouvoir infini de mon maître, et désespérez !', null, null, null, null, null, null, null, null, '17016', '1', '0', '0', 'sindragosa SAY_PHASE_3');
+REPLACE INTO `script_texts` VALUES ('-1631154', 'Péris !', null, null, null, null, null, null, null, null, '17008', '1', '0', '0', 'sindragosa SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631155', 'La faille de la condition mortelle...', null, null, null, null, null, null, null, null, '17009', '1', '0', '0', 'sindragosa SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631156', 'ASSEZ ! Ce petit jeu me fatigue !', null, null, null, null, null, null, null, null, '17011', '1', '0', '0', 'sindragosa SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1631157', 'Libre... Enfin...', null, null, null, null, null, null, null, null, '17010', '1', '0', '0', 'sindragosa SAY_DEATH');
+
+/* Boss :
+Le roi-liche. */
+REPLACE INTO `script_texts` VALUES ('-1631158', 'Voici donc qu’arrive la fameuse justice de la Lumière ? Dois-je déposer Deuillegivre et me jeter à tes pieds en implorant pitié, Fordring ?', null, null, null, null, null, null, null, null, '17349', '1', '0', '0', 'lich_king SAY_INTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1631159', 'Nous t’accorderons une mort rapide, Arthas. Les milliers d’âmes que tu as torturées et anéanties n’y ont pas eu droit.', null, null, null, null, null, null, null, null, '17390', '1', '0', '0', 'tirion SAY_INTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1631160', 'Et vous allez les rejoindre. Quand j’en aurai fini avec vous, vous crierez grâce, et je vous la refuserai. Vos cris d’agonie seront un hymne à ma puissance illimitée...', null, null, null, null, null, null, null, null, '17350', '1', '0', '0', 'lich_king SAY_INTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1631161', 'Tout est dit. Champions, À L’ATTAQUE !', null, null, null, null, null, null, null, null, '17391', '1', '0', '0', 'tirion SAY_INTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1631162', 'Je vais te laisser en vie, que tu sois témoin de la fin, Fordring. Je ne voudrais pas priver le plus grand héros de la Lumière du spectacle de ce misérable monde refaçonné à mon image.', null, null, null, null, null, null, null, null, '17351', '1', '0', '0', 'lich_king SAY_INTRO_5');
+REPLACE INTO `script_texts` VALUES ('-1631163', 'Alors venez champions, donnez-moi toute votre fureur !', null, null, null, null, null, null, null, null, '17352', '1', '0', '0', 'lich_king SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1631164', 'Je vais vous glacer de l\'intérieur, vous ne serez plus que des carcasses gelées.', null, null, null, null, null, null, null, null, '17369', '1', '0', '0', 'lich_king SAY_REMORSELESS_WINTER');
+REPLACE INTO `script_texts` VALUES ('-1631165', 'Voyez le monde qui vous entoure s\'écrouler !', null, null, null, null, null, null, null, null, '17370', '1', '0', '0', 'lich_king SAY_SHATTER_ARENA');
+REPLACE INTO `script_texts` VALUES ('-1631166', 'Val\'kyrs, votre maître vous appelle !', null, null, null, null, null, null, null, null, '17373', '1', '0', '0', 'lich_king SAY_SUMMON_VALKYR');
+REPLACE INTO `script_texts` VALUES ('-1631167', 'Deuillegivre a faim...', null, null, null, null, null, null, null, null, '17366', '1', '0', '0', 'lich_king SAY_HARVEST_SOUL');
+REPLACE INTO `script_texts` VALUES ('-1631168', 'Vous venez pour faire justice à Arthas ? Pour anéantir le Roi-Liche ?', null, null, null, null, null, null, null, null, '17394', '1', '0', '0', 'terenas SAY_FM_TERENAS_AID_1');
+REPLACE INTO `script_texts` VALUES ('-1631169', 'D’abord, vous devez échapper à l’étreinte de Deuillegivre, ou vous serez damnés comme je le suis, emprisonnés dans cette maudite lame pour l’éternité.', null, null, null, null, null, null, null, null, '17395', '1', '0', '0', 'terenas SAY_FM_TERENAS_AID_2');
+REPLACE INTO `script_texts` VALUES ('-1631170', 'Aidez-moi à détruire ces âmes torturées ! Ensemble nous pouvons relacher l\'étrinte de l\'épée et affaiblir le Roi-Liche de l\'intérieur !', null, null, null, null, null, null, null, null, '17396', '1', '0', '0', 'terenas SAY_FM_TERENAS_AID_3');
+REPLACE INTO `script_texts` VALUES ('-1631171', 'Argh... Deuillegivre, obéit !', null, null, null, null, null, null, null, null, '17367', '1', '0', '0', 'lich_king SAY_FM_PLAYER_ESCAPE');
+REPLACE INTO `script_texts` VALUES ('-1631172', 'Deuillegivre se repaît des âmes de vos alliés morts !', null, null, null, null, null, null, null, null, '17368', '1', '0', '0', 'lich_king SAY_FM_PLAYER_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1631173', 'Apocalypse !', null, null, null, null, null, null, null, null, '17371', '1', '0', '0', 'lich_king SAY_SPECIAL_1');
+REPLACE INTO `script_texts` VALUES ('-1631174', 'À genoux devant votre seigneur et maître !', null, null, null, null, null, null, null, null, '17372', '1', '0', '0', 'lich_king SAY_SPECIAL_2');
+REPLACE INTO `script_texts` VALUES ('-1631175', 'Ah ! Larves ! Vous m\'avez réellement fait mal ! Peut-être ai-je voulu jouer avec vous trop longtemps ? Goûtez maintenant à la vangence du tombeau !', null, null, null, null, null, null, null, null, '17359', '1', '0', '0', 'lich_king SAY_LAST_PHASE');
+REPLACE INTO `script_texts` VALUES ('-1631176', 'L\'espoir faiblit !', null, null, null, null, null, null, null, null, '17363', '1', '0', '0', 'lich_king SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1631177', 'La fin est venue !', null, null, null, null, null, null, null, null, '17364', '1', '0', '0', 'lich_king SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1631178', 'Rencontrez votre tagique fin !', null, null, null, null, null, null, null, null, '17365', '1', '0', '0', 'lich_king SAY_ENRAGE');
+REPLACE INTO `script_texts` VALUES ('-1631179', 'Il n’y a plus aucun doute. Plus la moindre question. Vous êtes bien les plus grands champions d’Azeroth. Vous avez triomphé de toutes les épreuves que je vous ai envoyées. Mes plus puissants serviteurs ont succombé à votre implacable assaut... À votre fureur déchaînée...', null, null, null, null, null, null, null, null, '17353', '1', '0', '0', 'lich_king SAY_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1631180', 'Est-ce vraiment la justice qui vous anime ? Je me demande...', null, null, null, null, null, null, null, null, '17354', '1', '0', '0', 'lich_king SAY_OUTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1631181', 'Tu les as bien entraînés, Fordring. Tu as amené les plus grands combattants de l’histoire de ce monde... Tout droit dans mes bras. Exactement comme je le voulais ! Tu seras dûment récompensé pour ce sacrifice involontaire.', null, null, null, null, null, null, null, null, '17355', '1', '0', '0', 'lich_king SAY_OUTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1631182', 'Et maintenant, regarde-moi les relever de la mort pour qu’ils deviennent les maîtres du Fléau. Ils vont plonger ce monde dans le chaos et la destruction. Azeroth va tomber sous leurs coups, et tu seras la première victime.', null, null, null, null, null, null, null, null, '17356', '1', '0', '0', 'lich_king SAY_OUTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1631183', 'Quelle délicieuse ironie.', null, null, null, null, null, null, null, null, '17357', '1', '0', '0', 'lich_king SAY_OUTRO_5');
+REPLACE INTO `script_texts` VALUES ('-1631184', 'LUMIÈRE, ACCORDE-MOI TON ULTIME BÉNÉDICTION ! DONNE-MOI LA FORCE... DE BRISER CES CHAÎNES !', null, null, null, null, null, null, null, null, '17392', '1', '0', '0', 'tirion SAY_OUTRO_6');
+REPLACE INTO `script_texts` VALUES ('-1631185', 'Impossible...', null, null, null, null, null, null, null, null, '17358', '1', '0', '0', 'lich_king SAY_OUTRO_7');
+REPLACE INTO `script_texts` VALUES ('-1631186', 'C\'est fini, Arthas ! Ta haine ne dévorera pas une vie de plus !', null, null, null, null, null, null, null, null, '17393', '1', '0', '0', 'tirion SAY_OUTRO_8');
+REPLACE INTO `script_texts` VALUES ('-1631187', 'Enfin libre ! C\'est terminé, mon fils. L\'heure du jugement est venu.', null, null, null, null, null, null, null, null, '17397', '1', '0', '0', 'terenas SAY_OUTRO_9');
+REPLACE INTO `script_texts` VALUES ('-1631188', 'Debout, champions de la Lumière !', null, null, null, null, null, null, null, null, '17398', '1', '0', '0', 'terenas SAY_OUTRO_10');
+REPLACE INTO `script_texts` VALUES ('-1631189', 'LE ROI-LICHE... DOIT... PÉRIR !', null, null, null, null, null, null, null, null, '17389', '1', '0', '0', 'tirion SAY_OUTRO_11');
+REPLACE INTO `script_texts` VALUES ('-1631190', 'Me voilà devant eux comme le loup devant les agneaux, et ils n\'ont pas peur.', null, null, null, null, null, null, null, null, '17361', '1', '0', '0', 'lich_king SAY_OUTRO_12');
+REPLACE INTO `script_texts` VALUES ('-1631191', 'Ils ne connaissent pas la peur...', null, null, null, null, null, null, null, null, '17362', '1', '0', '0', 'lich_king SAY_OUTRO_13');
+REPLACE INTO `script_texts` VALUES ('-1631192', '%s meurt.', null, null, null, null, null, null, null, null, '17374', '2', '0', '0', 'lich_king SAY_OUTRO_14');
+
+
+
+
+/******************************************
+Le Sanctum Rubis
+*******************************************/
+
+/* PNJ :
+Gardienne du sanctum Xerestrasza. */
+REPLACE INTO `script_texts` VALUES ('-1666000', 'Au secours ! Je suis emprisonnée dans cet arbre ! J\'ai besoin d\'aide !', null, null, null, null, null, null, null, null, '17490', '6', '0', '0', 'xerestraza SAY_XERESTRASZA_HELP');
+REPLACE INTO `script_texts` VALUES ('-1666001', 'Merci ! Je n\'aurais pas pu tenir longtemps. Il est arrivé une chose terrible.', null, null, null, null, null, null, null, null, '17491', '1', '0', '0', 'xerestraza SAY_XERESTRASZA_THANKS');
+REPLACE INTO `script_texts` VALUES ('-1666002', 'Nous pensions que le sanctum était bien défendu, mais rien ne nous préparait à un assaut de cette nature.', null, null, null, null, null, null, null, null, '17492', '0', '0', '0', 'xerestraza SAY_OUTRO_1');
+REPLACE INTO `script_texts` VALUES ('-1666003', 'Les dragons noirs se sont matérialisés d\'un coup, et nous ont attaqués avant que nous ne puissions réagir.', null, null, null, null, null, null, null, null, '17493', '0', '0', '0', 'xerestraza SAY_OUTRO_2');
+REPLACE INTO `script_texts` VALUES ('-1666004', 'Nous n\'avons eu aucune chance. Pendant que mes frères s\'effondraient, j\'ai réussi à me retrancher ici et à bloquer l\'entrée.', null, null, null, null, null, null, null, null, '17494', '0', '0', '0', 'xerestraza SAY_OUTRO_3');
+REPLACE INTO `script_texts` VALUES ('-1666005', 'Ils nous ont froidement massacrés, mais ce qui les intéressait vraiment, c\'était les œufs qui sont conservés dans le sanctum.', null, null, null, null, null, null, null, null, '17495', '0', '0', '0', 'xerestraza SAY_OUTRO_4');
+REPLACE INTO `script_texts` VALUES ('-1666006', 'Le commandant des troupes stationnées ici est une brute sauvage appelé Zarithrian, mais je crains que d\'autres puissances soient à l\'œuvre.', null, null, null, null, null, null, null, null, '17496', '0', '0', '0', 'xerestraza SAY_OUTRO_5');
+REPLACE INTO `script_texts` VALUES ('-1666007', 'Pendant la première attaque, j\'ai brièvement aperçu leur vrai chef, un terrifiant dragon du Crépuscule adulte.', null, null, null, null, null, null, null, null, '17497', '0', '0', '0', 'xerestraza SAY_OUTRO_6');
+REPLACE INTO `script_texts` VALUES ('-1666008', 'Je ne sais pas ce qu\'ils projettent exactement, héros, mais je sais qu\'il ne faut surtout pas les laisser y parvenir !', null, null, null, null, null, null, null, null, '17498', '0', '0', '0', 'xerestraza SAY_OUTRO_7');
+
+/* Mini-boss :
+Baltharus l'Enfant de la guerre. */
+REPLACE INTO `script_texts` VALUES ('-1666305', 'Ton pouvoir décline, ancien ! Bientôt, tu rejoindras tes amis !', null, null, null, null, null, null, null, null, '17525', '6', '0', '0', 'baltharus SAY_BALTHARUS_INTRO');
+REPLACE INTO `script_texts` VALUES ('-1666300', 'Ah, mon petit divertissement est arrivé.', null, null, null, null, null, null, null, null, '17520', '1', '0', '0', 'baltharus SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1666301', 'Baltharus ne fait jamais de prisonnier !', null, null, null, null, null, null, null, null, '17521', '1', '0', '0', 'baltharus SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1666302', 'Le monde a bien assez de héros.', null, null, null, null, null, null, null, null, '17522', '1', '0', '0', 'baltharus SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1666303', 'Celle-là... Je ne l\'ai pas vue venir...', null, null, null, null, null, null, null, null, '17523', '1', '0', '0', 'baltharus SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1666304', 'Deux fois plus mal, et deux fois moins drôle.', null, null, null, null, null, null, null, null, '17524', '1', '0', '0', 'baltharus SAY_SPLIT');
+
+/* Mini-boss :
+Saviana Ragefeu. */
+REPLACE INTO `script_texts` VALUES ('-1666400', 'Vous allez sssouffrir pour cette intrusion !', null, null, null, null, null, null, null, null, '17528', '1', '0', '0', 'saviana SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1666401', 'C\'est l\'ordre des choses...', null, null, null, null, null, null, null, null, '17529', '1', '0', '0', 'saviana SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1666402', 'Halion sera satisfait.', null, null, null, null, null, null, null, null, '17530', '1', '0', '0', 'saviana SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1666403', 'AAAAAAAAAAAAAAH !', null, null, null, null, null, null, null, null, '17531', '1', '0', '0', 'saviana DEATH');
+REPLACE INTO `script_texts` VALUES ('-1666405', 'Brûlez dans les flammes du maître !', null, null, null, null, null, null, null, null, '17532', '1', '0', '0', 'saviana SAY_SPECIAL');
+
+/* Mini-boss :
+Général Zarithrian. */
+REPLACE INTO `script_texts` VALUES ('-1666200', 'Alexstrasza s\'est choisi des alliés valeureux... Dommage que je doive vous ANÉANTIR !', null, null, null, null, null, null, null, null, '17512', '1', '0', '0', 'zarithrian SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1666201', 'Vous pensiez avoir une chance ?', null, null, null, null, null, null, null, null, '17513', '1', '0', '0', 'zarithrian SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1666202', 'C\'est mieux ainsi.', null, null, null, null, null, null, null, null, '17514', '1', '0', '0', 'zarithrian SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1666203', 'HALION ! Je... Ah !', null, null, null, null, null, null, null, null, '17515', '1', '0', '0', 'zarithrian SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1666204', 'Serviteurs, réduisez-les en cendres !', null, null, null, null, null, null, null, null, '17516', '1', '0', '0', 'zarithrian SAY_SUMMON');
+
+/* Boss :
+Halion. */
+REPLACE INTO `script_texts` VALUES ('-1666100', 'Insectes fouineurs ! Vous arrivez trop tard : le Sanctum Rubis est perdu.', null, null, null, null, null, null, null, null, '17499', '6', '0', '0', 'halion SAY_SPAWN');
+REPLACE INTO `script_texts` VALUES ('-1666101', 'Votre monde vacille au bord de l\'élimination. Vous serez tous témoins de l\'avènement d\'une nouvelle ère de DESTRUCTION !', null, null, null, null, null, null, null, null, '17500', '1', '0', '0', 'halion SAY_AGGRO');
+REPLACE INTO `script_texts` VALUES ('-1666102', 'Encore un « héros » de tombé.', null, null, null, null, null, null, null, null, '17501', '1', '0', '0', 'halion SAY_SLAY_1');
+REPLACE INTO `script_texts` VALUES ('-1666103', 'Ha Ha Ha !', null, null, null, null, null, null, null, null, '17501', '1', '0', '0', 'halion SAY_SLAY_2');
+REPLACE INTO `script_texts` VALUES ('-1666104', 'Savourez bien cette victoire, mortels, car ce sera votre dernière. Ce monde brûlera au retour du maître !', null, null, null, null, null, null, null, null, '17503', '1', '0', '0', 'halion SAY_DEATH');
+REPLACE INTO `script_texts` VALUES ('-1666105', 'Insuffisant.', null, null, null, null, null, null, null, null, '17504', '1', '0', '0', 'halion SAY_BERSERK');
+REPLACE INTO `script_texts` VALUES ('-1666106', 'Les cieux s\'embrasent !', null, null, null, null, null, null, null, null, '17505', '1', '0', '0', 'halion SAY_FIREBALL');
+REPLACE INTO `script_texts` VALUES ('-1666107', 'Méfiez-vous de l\'ombre !', null, null, null, null, null, null, null, null, '17506', '1', '0', '0', 'halion SAY_SPHERES');
+REPLACE INTO `script_texts` VALUES ('-1666108', 'Vous ne trouverez que souffrance au royaume du Crépuscule ! Entrez si vous l\'osez !', null, null, null, null, null, null, null, null, '17507', '1', '0', '0', 'halion SAY_PHASE_2');
+REPLACE INTO `script_texts` VALUES ('-1666109', 'Je suis la lumière ET l\'ombre ! Tremblez, mortels, devant le héraut d\'Aile de mort !', null, null, null, null, null, null, null, null, '17508', '1', '0', '0', 'halion SAY_PHASE_3');
+REPLACE INTO `script_texts` VALUES ('-1666110', 'Les sphères volantes rayonnent d\'énergie noire !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_SPHERES');
+REPLACE INTO `script_texts` VALUES ('-1724034', 'Vos efforts poussent %s plus loin hors du Royaume du Crépuscule !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_OUT_OF_TWILLIGHT');
+REPLACE INTO `script_texts` VALUES ('-1724035', 'Vos efforts poussent %s plus loin hors du Royaume matériel !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_OUT_OF_PHYSICAL');
+REPLACE INTO `script_texts` VALUES ('-1666112', 'Les efforts de vos compagnons poussent %s plus loin dans le Royaume du Crépuscule !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_INTO_TWILLIGHT');
+REPLACE INTO `script_texts` VALUES ('-1666111', 'Les efforts de vos compagnons poussent %s plus loin dans le Royaume matériel !', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_INTO_PHYSICAL');
+REPLACE INTO `script_texts` VALUES ('-1666113', 'En l\'absence de pression dans chacun des Royaumes, %s commence à se régénérer.', null, null, null, null, null, null, null, null, '0', '3', '0', '0', 'halion EMOTE_REGENERATE');
+
+
+
+
+/******************************************
+Ulduar
+*******************************************/
+
+/* Game Object :
+Téléporteur. */
+REPLACE INTO `gossip_texts` VALUES (-3050001,'Camp de base de l\'expédition', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 1');
+REPLACE INTO `gossip_texts` VALUES (-3050002,'Corridor de Fer', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 2');
+REPLACE INTO `gossip_texts` VALUES (-3050003,'La Forge colossale', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 3');
+REPLACE INTO `gossip_texts` VALUES (-3050004,'La Fellarerie', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 4');
+REPLACE INTO `gossip_texts` VALUES (-3050005,'L\'antichambre', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 5');
+REPLACE INTO `gossip_texts` VALUES (-3050006,'Le passage Brisé', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 6');
+REPLACE INTO `gossip_texts` VALUES (-3050007,'Le cercle d\'observation', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 7');
+REPLACE INTO `gossip_texts` VALUES (-3050008,'L\'Étincelle d\'imagination', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 8');
+REPLACE INTO `gossip_texts` VALUES (-3050009,'La prison de Yogg-Saron', null, null, null, null, null, null, null, null, 'Ulduar teleporter text 9');
