@@ -1,0 +1,15 @@
+--- forge_of_souls.cpp	2012-08-06 17:03:00.000000000 +0200
++++ forge_of_souls_fr.cpp	2012-10-29 10:11:21.995670504 +0100
+@@ -203,11 +203,11 @@
+               {
+                 case 37597:
+                   if(((npc_jaina_and_sylvana_FSintroAI*)pCreature->AI())->StartEvent != true)
+-                    pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What would you have of me, My Lady?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++                    pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Que voulez-vous de moi, ma Dame ?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+                   break;
+                 case 37596:
+                   if(((npc_jaina_and_sylvana_FSintroAI*)pCreature->AI())->StartEvent != true)
+-                    pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "What would you have of me, Banshee Queen?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++                    pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Que voulez-vous de moi, Reine Banshee ?", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+                   break;
+                }

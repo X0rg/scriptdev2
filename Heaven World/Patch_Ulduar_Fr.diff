@@ -1,0 +1,27 @@
+--- boss_flame_leviathan.cpp	2012-11-01 13:47:27.012975614 +0100
++++ boss_flame_leviathan_fr.cpp	2012-11-01 13:42:31.000000000 +0100
+@@ -912,11 +912,11 @@
+     if (!m_pInstance)
+         return true;
+     if (m_pInstance->GetData(TYPE_LEVIATHAN_HARD) == NOT_STARTED)
+-        player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Activate secondary defencive systems.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        player->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Activez le système secondaire de défense.", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+-    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Gib mir Macht mit einen Z."            , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
+-    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Gib mirr Belagerungsmaschine." , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
+-    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Gib mir  mit einen Moped."      , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
++    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Donnez-moi un Démolisseur de récupération."            , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 1);
++    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Donnez-moi un Engin de siège de récupération." , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 2);
++    player->ADD_GOSSIP_ITEM( GOSSIP_ICON_CHAT, "Donnez-moi une Bécane de récupération."      , GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF + 3);
+     player->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, pCreature->GetObjectGuid());
+     return true;
+ }
+@@ -961,7 +961,7 @@
+         return true;
+ 
+     if (m_pInstance->GetData(TYPE_LEVIATHAN_HARD) == IN_PROGRESS)
+-        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "We're ready. Begin the assault!", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
++        pPlayer->ADD_GOSSIP_ITEM(GOSSIP_ICON_CHAT, "Nous sommes prêts. Commencez l'assaut !", GOSSIP_SENDER_MAIN, GOSSIP_ACTION_INFO_DEF);
+ 
+     pPlayer->SEND_GOSSIP_MENU(DEFAULT_GOSSIP_MESSAGE, pCreature->GetObjectGuid());
+     return true;
